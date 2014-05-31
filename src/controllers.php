@@ -46,7 +46,7 @@ $app->match('/contact', function(Request $request) use ($app) {
     $form = array(
         'name' => '',
         'email' => '',
-        'object' => '',
+        'subject' => '',
         'message' => '',
     );
     $errors = array();
@@ -59,30 +59,32 @@ $app->match('/contact', function(Request $request) use ($app) {
         if (!array_key_exists('email', $form) || !filter_var($form['email'], FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = true;
         }
-        if (!array_key_exists('object', $form) || strlen($form['object']) < 1) {
-            $errors['object'] = true;
+        if (!array_key_exists('subject', $form) || strlen($form['subject']) < 1) {
+            $errors['subject'] = true;
         }
         if (!array_key_exists('message', $form) || strlen($form['message']) < 1) {
             $errors['message'] = true;
         }
 
         if (count($errors) < 1) {
-            $subject = 'New Message | '.$form['object'];
-            
-            $msg     = "New message from loickpiera.com by ".$form['name']."\r\n"
-                      ."====================================\r\n"
-                      .$form['message'];
+            $body = "New message sent from loickpiera.com by ".$form['name']."\r\n"
+                   ."====================================\r\n"
+                   .$form['message'];
                       
-            $headers = array('From: '.$app['contact.from'],
-                             'Reply-To: '.$form['email'],
-                             'Content-Type: text/plain; charset="utf-8"');
+            $message = \Swift_Message::newInstance()
+                ->setSubject('[loickpiera.com] '.$form['subject'])
+                ->setFrom(array($app['contact.from']))
+                ->setTo(array($app['contact.to']))
+                ->setBody($body)
+            ;
 
-            if (mail($app['contact.to'], $subject, $msg, join("\r\n", $headers))) {
-                $sent = true;
-            }
-            else {
-                $errors['send'] = true;
-            }
+            $app['mailer']->send($message);
+            $app['swiftmailer.spooltransport']
+                ->getSpool()
+                ->flushQueue($app['swiftmailer.transport'])
+            ;
+
+            $sent = true;
         }
     }
 
