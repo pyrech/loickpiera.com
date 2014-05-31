@@ -1,0 +1,12 @@
+{
+    "require": {
+        "silex/silex": "~1.1",
+        "silex/web-profiler": "~1.0",
+        "symfony/class-loader": "~2.3",
+        "symfony/filesystem": "~2.3",
+        "symfony/finder": "~2.3",
+        "symfony/monolog-bridge": "~2.3",
+        "symfony/twig-bridge": "~2.3",
+        "swiftmailer/swiftmailer": "5.*"
+    }
+}

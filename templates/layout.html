@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ seo.title }}</title>
+        <link rel="shortcut icon" href="{{ app.request.basepath }}/favicon.ico?v=2" type="image/x-icon">
+        <link rel="icon" href="{{ app.request.basepath }}/favicon.png?v=2" type="image/png">
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta name="description" content="{{ seo.description }}">
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700,700italic,400italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/resources/styles/knacss.css" />
+        <link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/resources/styles/main.css" />
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', {{ ga_account }}]);
+            _gaq.push(['_setSiteSpeedSampleRate', 100]);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="site-content">
+            <div class="grid2">
+                <aside class="mod site-block description">
+                    <header class="block-header">
+                        <a href="{{ path('home') }}" class="title">Loïck Piera</a>
+                    </header>
+                    <div class="block-content">
+                        <p>
+                            {{ age }} ans. <strong>Ingénieur développeur web PHP / Symfony</strong> à <a href="http://www.kernix.com">kernix</a>
+                        </p>
+                    </div>
+                </aside>
+                <aside class="mod site-block menu">
+                    <header class="block-header">
+                        <a href="javascript:void(0);" onclick="toggleBlock(this.parentNode.parentNode)" class="icon icon-nav" title="Réduire"></a>
+                        <span class="title">Menu</span>
+                    </header>
+                    <div class="block-content">
+                        <nav>
+                            <ul class="autogrid2 line">
+                                <li class="mod{{ menu_active == 'home' ? ' active' : '' }}">
+                                    <a{{ menu_active == 'home' ? ' class="icon icon-bracket2"' : '' }} href="{{ path('home') }}">Accueil</a>
+                                </li>
+                                <li class="mod{{ menu_active == 'realisations' ? ' active' : '' }}">
+                                    <a{{ menu_active == 'realisations' ? ' class="icon icon-bracket2"' : '' }} href="{{ path('realisations') }}">Réalisations</a>
+                                </li>
+                                <li class="mod{{ menu_active == 'about' ? ' active' : '' }}">
+                                    <a{{ menu_active == 'about' ? ' class="icon icon-bracket2"' : '' }} href="{{ path('about') }}">A propos</a>
+                                </li>
+                                <li class="mod{{ menu_active == 'contact' ? ' active' : '' }}">
+                                    <a{{ menu_active == 'contact' ? ' class="icon icon-bracket2"' : '' }} href="{{ path('contact') }}">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+            </div>
+            {% block content %}{% endblock %}
+        </div>
+        <footer class="site-footer">
+            <p>
+                &copy; {{ copyright }} Loick Piera - Tous droits réservés
+            </p>
+        </footer>
+        <script defer type="text/javascript" src="{{ app.request.basepath }}/resources/scripts/main.js"></script>
+    </body>
+</html>

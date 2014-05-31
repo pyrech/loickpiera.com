@@ -1,0 +1,148 @@
+{% extends "layout.html" %}
+
+{% block content -%}
+            <h1 class="visually-hidden">Réalisations</h1>
+            <div class="grid2{{ active_tydoma ? '-1' : '' }} line">
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">
+                            Refonte tydoma
+                            <span class="date">{{ active_tydoma ? 'Octobre 2013' : 'En cours' }}</span>
+                        </h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="description">
+                            Refonte du site web de tydoma et passage à WordPress.
+                        </p>
+                        {%- if active_tydoma -%}
+                        <div class="txtcenter">
+                            <div class="image">
+                                <img src="{{ app.request.basepath }}/resources/images/tydoma-mobile.png" alt="Site mobile" />
+                                <span class="legende">Site sur mobile</span>
+                            </div>
+                            <div class="image">
+                                <img src="{{ app.request.basepath }}/resources/images/tydoma-desktop.png" alt="Site desktop" />
+                                <span class="legende">Site sur bureau</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        {%- endif -%}
+                        <p>
+                            Le site est passé d'un micro-framework perso à <strong>WordPress</strong>. En plus d'offrir une gestion des
+                            contenus plus aisée, cette refonte a été l'occasion de revoir légèrement le design du site. Cette version
+                            est désormais développée en <strong>mobile-first</strong> et <strong>responsive design</strong>.
+                        </p>
+                        <p>
+                            Le site est équipé d'un blog permettant de présenter quelques chantiers importants, des news, etc.
+                        </p>
+                        <p>
+                            J'ai également profité de cette refonte pour optimiser, avec les dirigeants, les contenus, les images ainsi que le
+                            <strong>SEO</strong> du site.
+                        </p>
+                    </div>
+                </section>
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">
+                            Layout PHP
+                            <span class="date">Mai 2013</span>
+                        </h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="description">
+                            Classe PHP permettant de gérer le layout html, avec doctype, title, meta, etc.
+                        </p>
+                        <p>
+                            Layout PHP permet de gérer le layout, la partie fixe de votre page html finale, directement en PHP.
+                            En effet, il n'est pas toujours évident de gérer le <strong>doctype</strong> à la main, les balises
+                            <strong>meta</strong>, l'inclusion des <strong>styles</strong> et <strong>scripts</strong>, etc.
+                            Grâce à Layout PHP, vous pouvez configurer les balises que vous souhaitez ajouter dans la section head.
+                        </p>
+                        <p>
+                            De par son utilisation, cette classe peut être intégrée à n'importe quel framework PHP, mais sera
+                            naturellement tout aussi adaptée à des structures plus simples.
+                            Layout PHP est disponible sur <a href="https://github.com/Pyrech/Layout-PHP">GitHub</a> et
+                            via <a href="https://packagist.org/packages/pyrech/layout">Composer</a>.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="line">
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">
+                            Pixel Draw
+                            <span class="date">Avril 2013</span>
+                        </h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="description">
+                            Jeu web et mobile, mélange entre Pictionnary et DrawSomething.
+                        </p>
+                        <div class="txtcenter">
+                            <div class="image">
+                                <img src="{{ app.request.basepath }}/resources/images/pixeldraw-client-web.png" alt="Client web de PixelDraw" />
+                                <span class="legende">Client web du jeu</span>
+                            </div>
+                            <div class="image">
+                                <img src="{{ app.request.basepath }}/resources/images/pixeldraw-client-android.png" alt="Application android de PixelDraw" />
+                                <span class="legende">Application android du jeu</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <p>
+                            Réalisé lors d'un projet scolaire par 7 personnes en 5 jours. Composé d'un client web (HTML et JS),
+                            d'une <a href="https://github.com/Florianmski/PixelDraw-Android">application Android</a>, ainsi que
+                            d'un <a href="https://github.com/Pyrech/PixelDraw-Server">serveur PHP</a>, le jeu consiste à réaliser
+                            un dessin en pixel art, dans un temps donné, pour faire deviner un mot aux autres joueurs. Plus les
+                            joueurs trouvent vite, plus ils gagnent de points. Le dessinateur change à chaque tour. Un chat
+                            permet au joueur de donner leurs réponses mais aussi de communiquer entre eux.
+                        </p>
+                        <p>
+                            Pixel Draw repose principalement sur l'utilisation des <strong>web sockets</strong>. Côté serveur, j'ai utilisé la
+                            bibliothèque <a href="http://socketo.me/">Ratchet</a> qui fournit une bonne abstraction des web sockets,
+                            du protocole WampServer et des modes RPC et PubSub.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="grid2-1 line">
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">
+                            Walks in Orleans
+                            <span class="date">Mai 2011</span>
+                        </h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="description">
+                            Carte virtuelle permettant de découvrir monuments, lieux historiques ou intéressants d'Orléans.
+                        </p>
+                        <p>
+                            Ce site en anglais, réalisé dans le cadre d'un projet scolaire, se présente sous la forme d'une grille
+                            géographique où chaque case correspond à un lieu. Pour chaque lieu, un diaporama ou une vidéo est proposée,
+                            permettant de visualiser l'endroit, ainsi que les lieux à proximité. Des informations supplémentaires sont
+                            également disponibles sur l'histoire du lieu.
+                        </p>
+                    </div>
+                </section>
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">
+                            Tydoma
+                            <span class="date">Septembre 2010</span>
+                        </h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="description">
+                            Site vitrine de tydoma, société de BTP située en bretagne.
+                        </p>
+                        <p>
+                            Réalisation d'un site présentant les activités de la société, quelques chantiers de références, ses
+                            partenaires ainsi qu'un formulaire de contact.
+                        </p>
+                    </div>
+                </section>
+            </div>
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "layout.html" %}
+
+{% block content -%}
+            <div class="grid3 line">
+                <div class="mod multi-block">
+                    <section class="site-block presentation">
+                        <header class="block-header">
+                            <h1 class="title">{{ greet }} et bienvenue sur mon site</h1>
+                        </header>
+                        <div class="block-content">
+                            <p>
+                                Ce site, en responsive design, me permet de vous présenter <a href="#skills">mes compétences</a>,
+                                <a href="#soft">les logiciels et frameworks</a> que j'utilise réguilèrement, <a href="{{ path('realisations') }}">mes réalisations</a>
+                                et vous offre un moyen de me <a href="{{ path('contact') }}">contacter</a> si vous le désirez.
+                            </p>
+                            <p class="txtcenter">
+                                <a class="btn" href="{{ path('about') }}">En savoir +</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="site-block social">
+                        <header class="block-header">
+                            <h1 class="title">Retrouvez-moi sur</h1>
+                        </header>
+                        <div class="block-content">
+                            <ul>
+                                <li class="twitter">
+                                    <a href="https://twitter.com/Pyrech">
+                                        <span class="picto" style="background-image:url('{{ app.request.basepath }}/resources/images/social-twitter.png');"></span>
+                                        <span class="label">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="github">
+                                    <a href="https://github.com/Pyrech">
+                                        <span class="picto" style="background-image:url('{{ app.request.basepath }}/resources/images/social-github.png');"></span>
+                                        <span class="label">GitHub</span>
+                                    </a>
+                                </li>
+                                <li class="linkedin">
+                                    <a href="http://fr.linkedin.com/in/loickpiera">
+                                        <span class="picto" style="background-image:url('{{ app.request.basepath }}/resources/images/social-linkedin.png');"></span>
+                                        <span class="label">LinkedIn</span>
+                                    </a>
+                                </li>{#
+                                <li class="stackoverflow">
+                                    <a href="http://stackoverflow.com/users/1917092/pyrech">
+                                        <span class="picto" style="background-image:url('{{ app.request.basepath }}/resources/images/social-stackoverflow.png');"></span>
+                                        <span class="label">StackOverflow</span>
+                                    </a>
+                                </li>#}
+                                
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <section class="mod site-block skills" id="skills">
+                    <header class="block-header">
+                        <h1 class="title">Compétences</h1>
+                    </header>
+                    <div class="block-content">
+                        <ul>
+                            <li class="js">
+                                <div class="tile front">
+                                    <span class="visually-hidden">JavaScript</span>
+                                </div>
+                            </li>
+                            <li class="html">
+                                <div class="tile front">
+                                    <span class="visually-hidden">xHTML / HTML5</span>
+                                </div>
+                            </li>
+                            <li class="java">
+                                <div class="tile front">
+                                    <span class="visually-hidden">Java</span>
+                                </div>
+                            </li>
+                            <li class="css">
+                                <div class="tile front">
+                                    <span class="visually-hidden">CSS2 / CSS3</span>
+                                </div>
+                            </li>
+                            <li class="mysql">
+                                <div class="tile front">
+                                    <span class="visually-hidden">MySQL</span>
+                                </div>
+                            </li>
+                            <li class="php">
+                                <div class="tile front">
+                                    <span class="visually-hidden">PHP</span>
+                                </div>
+                            </li>
+                            <li class="seo">
+                                <div class="tile front">
+                                    <span class="visually-hidden">SEO</span>
+                                </div>
+                            </li>
+                            <li class="git">
+                                <div class="tile front">
+                                    <span class="visually-hidden">GIT</span>
+                                </div>
+                            </li>
+                            <li class="linux">
+                                <div class="tile front">
+                                    <span class="visually-hidden">Linux</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </section>
+                <div class="mod multi-block">
+                    <section class="site-block soft" id="soft">
+                        <header class="block-header">
+                            <h1 class="title">Frameworks / logiciels</h1>
+                        </header>
+                        <div class="block-content">
+                            <ul>
+                                <li>Symfony 2</li>
+                                <li>KWO</li>
+                                <li>WordPress</li>
+                                <li>Prototype JS</li>
+                                <li>Apache 2</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="site-block realisations" id="realisations">
+                        <header class="block-header">
+                            <h1 class="title">Réalisations</h1>
+                        </header>
+                        <div class="block-content">
+                            <ul>
+                                <li>Tydoma</li>
+                                <li>PixelDraw</li>
+                                <li>Layout PHP</li>
+                            </ul>
+                            <p class="txtcenter">
+                                <a class="btn" href="{{ path('realisations') }}">Voir mes réalisations</a>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+{% endblock %}

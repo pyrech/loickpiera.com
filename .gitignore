@@ -1,0 +1,5 @@
+/vendor/
+/web/google*
+composer.lock
+
+Thumbs.db

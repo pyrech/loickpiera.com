@@ -1,0 +1,118 @@
+<?php
+
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+//Request::setTrustedProxies(array('127.0.0.1'));
+
+$app->get('/', function() use ($app) {
+    return $app['twig']->render('home.html', array(
+        'seo' => array(
+            'title' => 'Loick Piera',
+            'description' => 'Ingénieur développeur web PHP / Symfony, MySQL, HTML5, CSS3 et JavaScript'
+        ),
+        'menu_active' => 'home',
+        'greet' => (intval(date('H')) >= 19 || intval(date('H')) <= 3) ? 'Bonsoir' : 'Bonjour'
+    ));
+})
+->bind( 'home');
+
+$app->get('/realisations', function() use ($app) {
+    return $app['twig']->render('realisations.html', array(
+        'seo' => array(
+            'title' => 'Réalisations | Loick Piera',
+            'description' => 'Réalisations | Loick Piera'
+        ),
+        'menu_active' => 'realisations',
+        'active_tydoma' => true
+    ));
+})
+->bind('realisations');
+
+$app->get('/a-propos', function() use ($app) {
+    return $app['twig']->render('about.html', array(
+        'seo' => array(
+            'title' => 'A propos | Loick Piera',
+            'description' => 'A propos de moi et de ce site | Loick Piera'
+        ),
+        'menu_active' => 'about'
+    ));
+})
+->bind('about');
+
+$app->match('/contact', function(Request $request) use ($app) {
+    $submitted = false;
+    $sent = false;
+    $form = array(
+        'name' => '',
+        'email' => '',
+        'object' => '',
+        'message' => '',
+    );
+    $errors = array();
+    if ($request->request->has('form-contact')) {
+        $form = $request->request->get('form');
+        $submitted = true;
+        if (!array_key_exists('name', $form) || strlen($form['name']) < 1) {
+            $errors['name'] = true;
+        }
+        if (!array_key_exists('email', $form) || !filter_var($form['email'], FILTER_VALIDATE_EMAIL)) {
+            $errors['email'] = true;
+        }
+        if (!array_key_exists('object', $form) || strlen($form['object']) < 1) {
+            $errors['object'] = true;
+        }
+        if (!array_key_exists('message', $form) || strlen($form['message']) < 1) {
+            $errors['message'] = true;
+        }
+
+        if (count($errors) < 1) {
+            $subject = 'New Message | '.$form['object'];
+            
+            $msg     = "New message from loickpiera.com by ".$form['name']."\r\n"
+                      ."====================================\r\n"
+                      .$form['message'];
+                      
+            $headers = array('From: '.$app['contact.from'],
+                             'Reply-To: '.$form['email'],
+                             'Content-Type: text/plain; charset="utf-8"');
+
+            if (mail($app['contact.to'], $subject, $msg, join("\r\n", $headers))) {
+                $sent = true;
+            }
+            else {
+                $errors['send'] = true;
+            }
+        }
+    }
+
+    return $app['twig']->render('contact.html', array(
+        'seo' => array(
+            'title' => 'Contact | Loick Piera',
+            'description' => 'Contactez moi'
+        ),
+        'menu_active' => 'contact',
+        'submitted' => $submitted,
+        'sent' => $sent,
+        'errors' => $errors,
+        'form' => $form
+    ));
+})
+->method('GET|POST')
+->bind('contact');
+
+$app->error(function (\Exception $e, $code) use ($app) {
+    if ($app['debug']) {
+        return;
+    }
+    
+    // 404.html, or 40x.html, or 4xx.html, or error.html
+    $templates = array(
+        'errors/'.$code.'.html',
+        'errors/'.substr($code, 0, 2).'x.html',
+        'errors/'.substr($code, 0, 1).'xx.html',
+        'errors/default.html',
+    );
+
+    return new Response($app['twig']->resolveTemplate($templates)->render(array('code' => $code)), $code);
+});
