@@ -108,7 +108,7 @@ $app->error(function (\Exception $e, $code) use ($app) {
         return;
     }
     
-    // 404.html, or 40x.html, or 4xx.html, or error.html
+    // 404.html, or 4xx.html, or 500.html, or 5xx.html, or default.html
     $templates = array(
         'errors/'.$code.'.html',
         'errors/'.substr($code, 0, 2).'x.html',

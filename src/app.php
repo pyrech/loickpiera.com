@@ -1,10 +1,9 @@
 <?php
 
 use Silex\Application;
-use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\SwiftmailerServiceProvider;
-use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\TwigServiceProvider;
+use Silex\Provider\UrlGeneratorServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -12,7 +11,6 @@ $app = new Application();
 
 $app->register(new UrlGeneratorServiceProvider());
 $app->register(new TwigServiceProvider());
-$app->register(new ServiceControllerServiceProvider());
 $app->register(new SwiftmailerServiceProvider());
 
 $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
