@@ -146,9 +146,12 @@ transition: margin 0.5s ease; }
 .skills li.linux div.tile { background-color:#333333; background-image:url('/resources/images/skill-linux.png'); background-size:50%; }
 
 /** Realisations **/
-.realisation.site-block .title .date { color:#999999; }
-.realisation.site-block .title .date:before { content:"- "; }
-.realisation.site-block .description { font-style:italic; font-size:1.6em; }
+.realisation.site-block .details { text-align:left; }
+.realisation.site-block .details .date { color:#666666; }
+.realisation.site-block .details .tags:before { content:"- "; }
+.realisation.site-block .details .tags strong { display:inline-block; padding:0 5px; margin:2px;font-weight:normal; background-color:#15A184; color:#ffffff; }
+.realisation.site-block .details .tags strong:before { content:"#"; }
+.realisation.site-block .description { font-style:italic; }
 .realisation.site-block .image { display:inline-block; font-size:1.2em; margin:1em 1em; }
 .realisation.site-block .image .legende { display:block; text-align:center; }
 .realisation.site-block .image img { max-height:25em; }

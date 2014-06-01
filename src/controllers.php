@@ -23,8 +23,7 @@ $app->get('/realisations', function() use ($app) {
             'title' => 'Réalisations | Loick Piera',
             'description' => 'Réalisations | Loick Piera'
         ),
-        'menu_active' => 'realisations',
-        'active_tydoma' => true
+        'menu_active' => 'realisations'
     ));
 })
 ->bind('realisations');

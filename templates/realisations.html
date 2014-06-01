@@ -2,19 +2,21 @@
 
 {% block content -%}
             <h1 class="visually-hidden">Réalisations</h1>
-            <div class="grid2{{ active_tydoma ? '-1' : '' }} line">
+            <div class="grid2-1 line">
                 <section class="mod site-block realisation">
                     <header class="block-header">
-                        <h2 class="title">
-                            Refonte tydoma
-                            <span class="date">{{ active_tydoma ? 'Octobre 2013' : 'En cours' }}</span>
-                        </h2>
+                        <h2 class="title">Refonte tydoma</h2>
                     </header>
                     <div class="block-content">
+                        <p class="details">
+                            <span class="date">Octobre 2013</span>
+                            <span class="tags">
+                                <strong>WordPress</strong>
+                            </span>
+                        </p>
                         <p class="description">
                             Refonte du site web de tydoma et passage à WordPress.
                         </p>
-                        {%- if active_tydoma -%}
                         <div class="txtcenter">
                             <div class="image">
                                 <img src="{{ app.request.basepath }}/resources/images/tydoma-mobile.png" alt="Site mobile" />
@@ -26,7 +28,6 @@
                             </div>
                             <div class="clear"></div>
                         </div>
-                        {%- endif -%}
                         <p>
                             Le site est passé d'un micro-framework perso à <strong>WordPress</strong>. En plus d'offrir une gestion des
                             contenus plus aisée, cette refonte a été l'occasion de revoir légèrement le design du site. Cette version
@@ -43,12 +44,15 @@
                 </section>
                 <section class="mod site-block realisation">
                     <header class="block-header">
-                        <h2 class="title">
-                            Layout PHP
-                            <span class="date">Mai 2013</span>
-                        </h2>
+                        <h2 class="title">Layout PHP</h2>
                     </header>
                     <div class="block-content">
+                        <p class="details">
+                            <span class="date">Mai 2013</span>
+                            <span class="tags">
+                                <strong>Open Source</strong>
+                            </span>
+                        </p>
                         <p class="description">
                             Classe PHP permettant de gérer le layout html, avec doctype, title, meta, etc.
                         </p>
@@ -70,12 +74,16 @@
             <div class="line">
                 <section class="mod site-block realisation">
                     <header class="block-header">
-                        <h2 class="title">
-                            Pixel Draw
-                            <span class="date">Avril 2013</span>
-                        </h2>
+                        <h2 class="title">Pixel Draw</h2>
                     </header>
                     <div class="block-content">
+                        <p class="details">
+                            <span class="date">Avril 2013</span>
+                            <span class="tags">
+                                <strong>Projet scolaire</strong>
+                                <strong>Web sockets</strong>
+                            </span>
+                        </p>
                         <p class="description">
                             Jeu web et mobile, mélange entre Pictionnary et DrawSomething.
                         </p>
@@ -112,10 +120,15 @@
                     <header class="block-header">
                         <h2 class="title">
                             Walks in Orleans
-                            <span class="date">Mai 2011</span>
                         </h2>
                     </header>
                     <div class="block-content">
+                        <p class="details">
+                            <span class="date">Mai 2011</span>
+                            <span class="tags">
+                                <strong>Projet scolaire</strong>
+                            </span>
+                        </p>
                         <p class="description">
                             Carte virtuelle permettant de découvrir monuments, lieux historiques ou intéressants d'Orléans.
                         </p>
@@ -131,10 +144,12 @@
                     <header class="block-header">
                         <h2 class="title">
                             Tydoma
-                            <span class="date">Septembre 2010</span>
                         </h2>
                     </header>
                     <div class="block-content">
+                        <p class="details">
+                            <span class="date">Septembre 2010</span>
+                        </p>
                         <p class="description">
                             Site vitrine de tydoma, société de BTP située en bretagne.
                         </p>
