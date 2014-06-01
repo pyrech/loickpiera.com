@@ -2,7 +2,7 @@
 
 {% block content -%}
             <h1 class="visually-hidden">Réalisations</h1>
-            <div class="grid2-1 line">
+            <div class="line">
                 <section class="mod site-block realisation">
                     <header class="block-header">
                         <h2 class="title">Refonte tydoma</h2>
@@ -11,6 +11,7 @@
                         <p class="details">
                             <span class="date">Octobre 2013</span>
                             <span class="tags">
+                                <strong>Intégration</strong>
                                 <strong>WordPress</strong>
                             </span>
                         </p>
@@ -29,19 +30,23 @@
                             <div class="clear"></div>
                         </div>
                         <p>
-                            Le site est passé d'un micro-framework perso à <strong>WordPress</strong>. En plus d'offrir une gestion des
-                            contenus plus aisée, cette refonte a été l'occasion de revoir légèrement le design du site. Cette version
-                            est désormais développée en <strong>mobile-first</strong> et <strong>responsive design</strong>.
+                            Le site est passé d'un micro-framework perso à <strong>WordPress</strong>. En plus d'offrir
+                            une gestion des contenus plus aisée, cette refonte a été l'occasion de revoir légèrement le
+                            design du site. Cette version est désormais développée en <strong>mobile-first</strong> et
+                            <strong>responsive design</strong>.
                         </p>
                         <p>
-                            Le site est équipé d'un blog permettant de présenter quelques chantiers importants, des news, etc.
+                            Le site est équipé d'un blog permettant de présenter quelques chantiers importants, des news,
+                            etc.
                         </p>
                         <p>
-                            J'ai également profité de cette refonte pour optimiser, avec les dirigeants, les contenus, les images ainsi que le
-                            <strong>SEO</strong> du site.
+                            J'ai également profité de cette refonte pour optimiser, avec les dirigeants, les contenus,
+                            les images ainsi que le <strong>SEO</strong> du site.
                         </p>
                     </div>
                 </section>
+            </div>
+            <div class="grid1-2 line">
                 <section class="mod site-block realisation">
                     <header class="block-header">
                         <h2 class="title">Layout PHP</h2>
@@ -52,26 +57,26 @@
                             <span class="tags">
                                 <strong>Open Source</strong>
                             </span>
+                            <a class="project-url" href="https://github.com/pyrech/Layout-PHP">Repo GitHub du projet</a>
                         </p>
                         <p class="description">
                             Classe PHP permettant de gérer le layout html, avec doctype, title, meta, etc.
                         </p>
                         <p>
-                            Layout PHP permet de gérer le layout, la partie fixe de votre page html finale, directement en PHP.
-                            En effet, il n'est pas toujours évident de gérer le <strong>doctype</strong> à la main, les balises
-                            <strong>meta</strong>, l'inclusion des <strong>styles</strong> et <strong>scripts</strong>, etc.
-                            Grâce à Layout PHP, vous pouvez configurer les balises que vous souhaitez ajouter dans la section head.
+                            Layout PHP permet de gérer le layout, la partie fixe de votre page html finale, directement
+                            en PHP. En effet, il n'est pas toujours évident de gérer le <strong>doctype</strong> à la
+                            main, les balises <strong>meta</strong>, l'inclusion des <strong>styles</strong> et
+                            <strong>scripts</strong>, etc. Grâce à Layout PHP, vous pouvez configurer les balises que
+                            vous souhaitez ajouter dans la section head.
                         </p>
                         <p>
-                            De par son utilisation, cette classe peut être intégrée à n'importe quel framework PHP, mais sera
-                            naturellement tout aussi adaptée à des structures plus simples.
-                            Layout PHP est disponible sur <a href="https://github.com/pyrech/Layout-PHP">GitHub</a> et
-                            via <a href="https://packagist.org/packages/pyrech/layout">Composer</a>.
+                            De par son utilisation, cette classe peut être intégrée à n'importe quel framework PHP, mais
+                            sera naturellement tout aussi adaptée à des structures plus simples. Layout PHP est
+                            disponible sur <a href="https://github.com/pyrech/Layout-PHP">GitHub</a> et via
+                            <a href="https://packagist.org/packages/pyrech/layout">Composer</a>.
                         </p>
                     </div>
                 </section>
-            </div>
-            <div class="line">
                 <section class="mod site-block realisation">
                     <header class="block-header">
                         <h2 class="title">Pixel Draw</h2>
@@ -80,36 +85,162 @@
                         <p class="details">
                             <span class="date">Avril 2013</span>
                             <span class="tags">
-                                <strong>Projet scolaire</strong>
+                                <strong>Open Source</strong>
                                 <strong>Web sockets</strong>
+                                <strong>Projet scolaire</strong>
                             </span>
+                            <a class="project-url" href="https://github.com/pyrech/PixelDraw-Server">Repo GitHub du projet</a>
                         </p>
                         <p class="description">
                             Jeu web et mobile, mélange entre Pictionnary et DrawSomething.
                         </p>
                         <div class="txtcenter">
                             <div class="image">
-                                <img src="{{ app.request.basepath }}/resources/images/pixeldraw-client-web.png" alt="Client web de PixelDraw" />
-                                <span class="legende">Client web du jeu</span>
+                                <img src="{{ app.request.basepath }}/resources/images/pixeldraw-client-web.png" alt="Client HTML5 de PixelDraw" />
+                                <span class="legende">Client HTML5</span>
                             </div>
                             <div class="image">
                                 <img src="{{ app.request.basepath }}/resources/images/pixeldraw-client-android.png" alt="Application android de PixelDraw" />
-                                <span class="legende">Application android du jeu</span>
+                                <span class="legende">Application android</span>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <p>
-                            Réalisé lors d'un projet scolaire par 7 personnes en 5 jours. Composé d'un client web (HTML et JS),
-                            d'une <a href="https://github.com/florianmski/PixelDraw-Android">application Android</a>, ainsi que
-                            d'un <a href="https://github.com/pyrech/PixelDraw-Server">serveur PHP</a>, le jeu consiste à réaliser
-                            un dessin en pixel art, dans un temps donné, pour faire deviner un mot aux autres joueurs. Plus les
-                            joueurs trouvent vite, plus ils gagnent de points. Le dessinateur change à chaque tour. Un chat
-                            permet au joueur de donner leurs réponses mais aussi de communiquer entre eux.
+                            Réalisé lors d'un projet scolaire par 7 personnes en 5 jours. Composé d'un client web (HTML
+                            et JS), d'une <a href="https://github.com/florianmski/PixelDraw-Android">application Android</a>,
+                            ainsi que d'un <a href="https://github.com/pyrech/PixelDraw-Server/tree/master/socket">serveur
+                            PHP</a>, le jeu consiste à réaliser un dessin en pixel art, dans un temps donné, pour faire
+                            deviner un mot aux autres joueurs. Plus les joueurs trouvent vite, plus ils gagnent de points.
+                            Le dessinateur change à chaque tour. Un chat permet au joueur de donner leurs réponses mais
+                            aussi de communiquer entre eux.
                         </p>
                         <p>
-                            Pixel Draw repose principalement sur l'utilisation des <strong>web sockets</strong>. Côté serveur, j'ai utilisé la
-                            bibliothèque <a href="http://socketo.me/">Ratchet</a> qui fournit une bonne abstraction des web sockets,
-                            du protocole WampServer et des modes RPC et PubSub.
+                            Pixel Draw repose principalement sur l'utilisation des <strong>web sockets</strong>. Côté
+                            serveur, j'ai utilisé la bibliothèque <a href="http://socketo.me/">Ratchet</a> qui fournit
+                            une bonne abstraction des web sockets, du protocole WampServer et des modes RPC et PubSub.
+                        </p>
+                        <p>
+                            J'ai participé à conception du format d'échange et mis en place la gestion des salles et des
+                            joueurs.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="line">
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">ECR</h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="details">
+                            <span class="date">Septembre 2012 - Juillet 2014</span>
+                            <span class="tags">
+                                <strong>Application RH</strong>
+                                <strong>Intégration</strong>
+                                <strong>Kernix</strong>
+                            </span>
+                            <a class="project-url" href="http://www.kernix.com/realisations/euro-cargo-rail-87">Présentation de l'outil</a>
+                        </p>
+                        <p class="description">
+                            Réalisation de la version 2 de l'application métier développée sur-mesure pour Euro Cargo
+                            Rail, leader européen des opérateurs de fret ferroviaire.
+                        </p>
+                        <div class="txtcenter">
+                            <div class="image">
+                                <img src="{{ app.request.basepath }}/resources/images/ecr-dashboard.png" alt="Dashboard" />
+                                <span class="legende">Dashboard de l'outil</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <p>
+                            Développement d'une solution ergonomique et multi-modules permettant de gérer et d'optimiser
+                            l’ensemble des processus RH d'ECR. Intégration complète de l'outil. Traitement des retours
+                            client. Refonte ergonomique du formulaire, présent sur la version 1 de l'application, de
+                            saisie des informations composant la journée de service des conducteurs de trains.
+                        </p>
+                        <p>
+                            Création d'un kiosque RH permettant aux salariés de demander des jours de congés et aux
+                            valideurs d'accepter, modifier ou refuser les demandes.
+                        </p>
+                        <p>
+                            Développement d'un module de suivi des trains en temps réel et d'alerte des clients d'ECR
+                            pour les prévenir dés qu'un incident ou un retard affecte un de leurs trains.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="grid2-1 line">
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">Opinion Media</h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="details">
+                            <span class="date">Juillet 2012</span>
+                            <span class="tags">
+                                <strong>Widgets sociaux</strong>
+                                <strong>Web service</strong>
+                                <strong>Varnish</strong>
+                                <strong>Kernix</strong>
+                            </span>
+                            <a class="project-url" href="http://www.relations-publiques.pro/8716/opinion-media-lopinion-des-francais-sur-lactualite-quotidienne-accessible-instantanement.html">Présentation du projet</a>
+                        </p>
+                        <p class="description">
+                            Widgets sociaux permettant aux internautes de répondre à plusieurs questions en cohérence
+                            avec les articles d’un site d’information.
+                        </p>
+                        <div class="txtcenter">
+                            <div class="image">
+                                <img src="{{ app.request.basepath }}/resources/images/opinion-media-widget.png" alt="Intégration du widget" />
+                                <span class="legende">Intégration du widget avec les autres services</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <p>
+                            Développement du système de widget sociaux à insérer via une balise html (à l'instar des
+                            widgets type facebook ou twitter) et mise en place d’un web service permettant de récupérer
+                            et d'afficher les widgets sur le site d'information partenaire.
+                        </p>
+                        <p>
+                            Implémentation du serveur de cache Varnish pour limiter la charge de traffic sur le serveur
+                            principal de l'application.
+                        </p>
+                        <p>
+                            Création d’un module de tracking permettant d'avoir des statistiques sur le nombre de vues,
+                            de clics ou encore des taux de réponses à ces widgets.
+                        </p>
+                    </div>
+                </section>
+                <section class="mod site-block realisation">
+                    <header class="block-header">
+                        <h2 class="title">
+                            RNCSM
+                        </h2>
+                    </header>
+                    <div class="block-content">
+                        <p class="details">
+                            <span class="date">Janvier 2012</span>
+                            <span class="tags">
+                                <strong>Web services</strong>
+                                <strong>Intégration</strong>
+                                <strong>Kernix</strong>
+                            </span>
+                            <a class="project-url" href="http://www.centres-sante-mutualistes.fr">Site internet</a>
+                        </p>
+                        <p class="description">
+                            Sites internet et extranet du Réseau National des Centres de Santé Mutualistes
+                        </p>
+                        <p>
+                            Développement, en totale autonomie lors de mon apprentissage à Kernix, des sites internet et
+                            extranet pour le réseau et intégration complète de l'outil.
+                        </p>
+                        <p>
+                            Création d'un module d'actualités et développement d'un moteur de recherche des centres de
+                            santé.
+                        </p>
+                        <p>
+                            Mise en place d'un système d'offres d'emplois et création de web services pour diffuser ces
+                            offres sur d'autres sites partenaires.
                         </p>
                     </div>
                 </section>
@@ -130,13 +261,14 @@
                             </span>
                         </p>
                         <p class="description">
-                            Carte virtuelle permettant de découvrir monuments, lieux historiques ou intéressants d'Orléans.
+                            Carte virtuelle permettant de découvrir monuments, lieux historiques ou intéressants
+                            d'Orléans.
                         </p>
                         <p>
-                            Ce site en anglais, réalisé dans le cadre d'un projet scolaire, se présente sous la forme d'une grille
-                            géographique où chaque case correspond à un lieu. Pour chaque lieu, un diaporama ou une vidéo est proposée,
-                            permettant de visualiser l'endroit, ainsi que les lieux à proximité. Des informations supplémentaires sont
-                            également disponibles sur l'histoire du lieu.
+                            Ce site en anglais, réalisé dans le cadre d'un projet scolaire, se présente sous la forme
+                            d'une grille géographique où chaque case correspond à un lieu. Pour chaque lieu, un diaporama
+                            ou une vidéo est proposée, permettant de visualiser l'endroit, ainsi que les lieux à proximité.
+                            Des informations supplémentaires sont également disponibles sur l'histoire du lieu.
                         </p>
                     </div>
                 </section>
@@ -149,13 +281,19 @@
                     <div class="block-content">
                         <p class="details">
                             <span class="date">Septembre 2010</span>
+                            <span class="tags">
+                                <strong>Intégration</strong>
+                            </span>
                         </p>
                         <p class="description">
                             Site vitrine de tydoma, société de BTP située en bretagne.
                         </p>
                         <p>
-                            Réalisation d'un site présentant les activités de la société, quelques chantiers de références, ses
-                            partenaires ainsi qu'un formulaire de contact.
+                            Réalisation d'un site présentant les activités de la société, quelques chantiers de références,
+                            ses partenaires ainsi qu'un formulaire de contact.
+                        </p>
+                        <p>
+                            Création d'un micro-framework PHP avec un espace d'administration. Intégration du site.
                         </p>
                     </div>
                 </section>
