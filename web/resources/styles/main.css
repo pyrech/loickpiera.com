@@ -125,9 +125,9 @@ transition: margin 0.5s ease; }
 .social .block-content { padding:0 0 15px; overflow:hidden; }
 .social ul { padding:0; }
 .social li { float:left; list-style:none; width:33.333333333333333333%; }
-.social li a { display:block; width:100%; height:100%; text-decoration:none; }
-.social li a .picto { display:block; width:100%; height:40px; background-position:center center; background-repeat:no-repeat; background-size:15%; }
-.social li a .label { color:#999999;text-align:center; display:block; width:100%; }
+.social li a { display:block; width:100%; height:100%; text-decoration:none; text-align:center; }
+.social li a .picto { height:40px; }
+.social li a .label { color:#999999; display:block; width:100%; margin-top:0.8em; }
 .social li a:hover .label { color:#5B5B5B; }
 
 .skills { overflow:visible; }
