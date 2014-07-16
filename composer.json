@@ -1,4 +1,7 @@
 {
+    "name": "loickpiera.com",
+    "description": "My very own website :)",
+    "license": "proprietary",
     "require": {
         "silex/silex": "~1.1",
         "silex/web-profiler": "~1.0",
