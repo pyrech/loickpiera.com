@@ -3,8 +3,6 @@
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-//Request::setTrustedProxies(array('127.0.0.1'));
-
 $app->get('/', function() use ($app) {
     return $app['twig']->render('home.html', array(
         'seo' => array(
