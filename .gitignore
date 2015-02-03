@@ -1,5 +1,4 @@
+/var/cache
+/var/logs
 /vendor/
 /web/google*
-composer.lock
-
-Thumbs.db
