@@ -3,13 +3,13 @@
     "description": "My very own website :)",
     "license": "proprietary",
     "require": {
-        "silex/silex": "~1.1",
+        "silex/silex": "~1.2",
         "silex/web-profiler": "~1.0",
-        "symfony/class-loader": "~2.3",
-        "symfony/filesystem": "~2.3",
-        "symfony/finder": "~2.3",
-        "symfony/monolog-bridge": "~2.3",
-        "symfony/twig-bridge": "~2.3",
+        "symfony/class-loader": "~2.6",
+        "symfony/filesystem": "~2.6",
+        "symfony/finder": "~2.6",
+        "symfony/monolog-bridge": "~2.6",
+        "symfony/twig-bridge": "~2.6",
         "swiftmailer/swiftmailer": "5.*"
     }
 }
