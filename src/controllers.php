@@ -3,41 +3,41 @@
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-$app->get('/', function() use ($app) {
+$app->get('/', function () use ($app) {
     return $app['twig']->render('home.html', array(
         'seo' => array(
             'title' => 'Loick Piera',
-            'description' => 'Ingénieur développeur web PHP / Symfony, MySQL, HTML5, CSS3 et JavaScript'
+            'description' => 'Ingénieur développeur web PHP / Symfony, MySQL, HTML5, CSS3 et JavaScript',
         ),
         'menu_active' => 'home',
-        'greet' => (intval(date('H')) >= 19 || intval(date('H')) <= 3) ? 'Bonsoir' : 'Bonjour'
+        'greet' => (intval(date('H')) >= 19 || intval(date('H')) <= 3) ? 'Bonsoir' : 'Bonjour',
     ));
 })
-->bind( 'home');
+->bind('home');
 
-$app->get('/realisations', function() use ($app) {
+$app->get('/realisations', function () use ($app) {
     return $app['twig']->render('realisations.html', array(
         'seo' => array(
             'title' => 'Réalisations | Loick Piera',
-            'description' => 'Réalisations | Loick Piera'
+            'description' => 'Réalisations | Loick Piera',
         ),
-        'menu_active' => 'realisations'
+        'menu_active' => 'realisations',
     ));
 })
 ->bind('realisations');
 
-$app->get('/a-propos', function() use ($app) {
+$app->get('/a-propos', function () use ($app) {
     return $app['twig']->render('about.html', array(
         'seo' => array(
             'title' => 'A propos | Loick Piera',
-            'description' => 'A propos de moi et de ce site | Loick Piera'
+            'description' => 'A propos de moi et de ce site | Loick Piera',
         ),
-        'menu_active' => 'about'
+        'menu_active' => 'about',
     ));
 })
 ->bind('about');
 
-$app->match('/contact', function(Request $request) use ($app) {
+$app->match('/contact', function (Request $request) use ($app) {
     $submitted = false;
     $sent = false;
     $form = array(
@@ -88,13 +88,13 @@ $app->match('/contact', function(Request $request) use ($app) {
     return $app['twig']->render('contact.html', array(
         'seo' => array(
             'title' => 'Contact | Loick Piera',
-            'description' => 'Contactez moi'
+            'description' => 'Contactez moi',
         ),
         'menu_active' => 'contact',
         'submitted' => $submitted,
         'sent' => $sent,
         'errors' => $errors,
-        'form' => $form
+        'form' => $form,
     ));
 })
 ->method('GET|POST')
