@@ -23,6 +23,8 @@ $app['twig'] = $app->extend('twig', function($twig, $app) {
     $twig->addGlobal('copyright', '2013'.(date('Y') > 2013 ? ' - '.date('Y') : ''));
 
     $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) use ($app) {
+        $versionParameter = $app['asset_version'];
+        $asset .= (false === strpos($asset, '?') ? '?' : '&').$versionParameter;
         return $app['request_stack']->getMasterRequest()->getBasepath().'/'.ltrim($asset, '/');
     }));
 
