@@ -67,7 +67,7 @@ $app->match('/contact', function(Request $request) use ($app) {
             $body = "New message sent from loickpiera.com by ".$form['name']."\r\n"
                    ."====================================\r\n"
                    .$form['message'];
-                      
+
             $message = \Swift_Message::newInstance()
                 ->setSubject('[loickpiera.com] '.$form['subject'])
                 ->setFrom(array($app['contact.from']))
@@ -100,11 +100,11 @@ $app->match('/contact', function(Request $request) use ($app) {
 ->method('GET|POST')
 ->bind('contact');
 
-$app->error(function (\Exception $e, $code) use ($app) {
+$app->error(function (\Exception $e, Request $request, $code) use ($app) {
     if ($app['debug']) {
         return;
     }
-    
+
     // 404.html, or 4xx.html, or 500.html, or 5xx.html, or default.html
     $templates = array(
         'errors/'.$code.'.html',

@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <title>{{ seo.title }}</title>
-        <link rel="shortcut icon" href="{{ app.request.basepath }}/favicon.ico?v=2" type="image/x-icon">
-        <link rel="icon" href="{{ app.request.basepath }}/favicon.png?v=2" type="image/png">
+        <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{ asset('/favicon.png') }}" type="image/png">
         <meta name="viewport" content="initial-scale=1.0">
         <meta name="description" content="{{ seo.description }}">
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700,700italic,400italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/resources/styles/knacss.css" />
-        <link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/resources/styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('/resources/styles/knacss.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('/resources/styles/main.css') }}" />
         <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', {{ ga_account }}]);
@@ -67,6 +67,6 @@
                 &copy; {{ copyright }} Loïck Piera - Tous droits réservés
             </p>
         </footer>
-        <script defer type="text/javascript" src="{{ app.request.basepath }}/resources/scripts/main.js"></script>
+        <script defer type="text/javascript" src="{{ asset('/resources/scripts/main.js') }}"></script>
     </body>
 </html>
