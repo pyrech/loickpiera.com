@@ -18,7 +18,6 @@ $app->register(new HttpFragmentServiceProvider());
 $app->register(new SwiftmailerServiceProvider());
 
 $app['twig'] = $app->extend('twig', function ($twig, $app) {
-    $twig->addGlobal('ga_account', $app['ga_account']);
     $twig->addGlobal('age', floor((time()-674085600)/(3600*24*365.25)));
     $twig->addGlobal('copyright', '2013'.(date('Y') > 2013 ? ' - '.date('Y') : ''));
 
