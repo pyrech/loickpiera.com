@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Response;
 $app->get('/', function () use ($app) {
     return $app['twig']->render('home.html', array(
         'seo' => array(
-            'title' => 'Loick Piera',
+            'title' => 'Loïck Piera',
             'description' => 'Ingénieur développeur web PHP / Symfony, MySQL, HTML5, CSS3 et JavaScript',
         ),
         'menu_active' => 'home',
@@ -18,8 +18,8 @@ $app->get('/', function () use ($app) {
 $app->get('/realisations', function () use ($app) {
     return $app['twig']->render('realisations.html', array(
         'seo' => array(
-            'title' => 'Réalisations | Loick Piera',
-            'description' => 'Réalisations | Loick Piera',
+            'title' => 'Réalisations | Loïck Piera',
+            'description' => 'Réalisations | Loïck Piera',
         ),
         'menu_active' => 'realisations',
     ));
@@ -29,8 +29,8 @@ $app->get('/realisations', function () use ($app) {
 $app->get('/a-propos', function () use ($app) {
     return $app['twig']->render('about.html', array(
         'seo' => array(
-            'title' => 'A propos | Loick Piera',
-            'description' => 'A propos de moi et de ce site | Loick Piera',
+            'title' => 'A propos | Loïck Piera',
+            'description' => 'A propos de moi et de ce site | Loïck Piera',
         ),
         'menu_active' => 'about',
     ));
@@ -87,7 +87,7 @@ $app->match('/contact', function (Request $request) use ($app) {
 
     return $app['twig']->render('contact.html', array(
         'seo' => array(
-            'title' => 'Contact | Loick Piera',
+            'title' => 'Contact | Loïck Piera',
             'description' => 'Contactez moi',
         ),
         'menu_active' => 'contact',
