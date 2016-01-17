@@ -7,24 +7,13 @@ $app->get('/', function () use ($app) {
     return $app['twig']->render('home.html', array(
         'seo' => array(
             'title' => 'Loïck Piera',
-            'description' => 'Ingénieur développeur web PHP / Symfony, MySQL, HTML5, CSS3 et JavaScript',
+            'description' => 'Développeur web PHP / Symfony',
         ),
         'menu_active' => 'home',
         'greet' => (intval(date('H')) >= 19 || intval(date('H')) <= 3) ? 'Bonsoir' : 'Bonjour',
     ));
 })
 ->bind('home');
-
-$app->get('/realisations', function () use ($app) {
-    return $app['twig']->render('realisations.html', array(
-        'seo' => array(
-            'title' => 'Réalisations | Loïck Piera',
-            'description' => 'Réalisations | Loïck Piera',
-        ),
-        'menu_active' => 'realisations',
-    ));
-})
-->bind('realisations');
 
 $app->get('/a-propos', function () use ($app) {
     return $app['twig']->render('about.html', array(
@@ -40,7 +29,7 @@ $app->get('/a-propos', function () use ($app) {
 $app->match('/contact', function (Request $request) use ($app) {
     $submitted = false;
     $sent = false;
-    $form = array(
+    $values = array(
         'name' => '',
         'email' => '',
         'subject' => '',
@@ -48,28 +37,28 @@ $app->match('/contact', function (Request $request) use ($app) {
     );
     $errors = array();
     if ($request->request->has('form-contact')) {
-        $form = $request->request->get('form');
+        $values = $request->request->get('form');
         $submitted = true;
-        if (!array_key_exists('name', $form) || strlen($form['name']) < 1) {
+        if (!array_key_exists('name', $values) || strlen($values['name']) < 1) {
             $errors['name'] = true;
         }
-        if (!array_key_exists('email', $form) || !filter_var($form['email'], FILTER_VALIDATE_EMAIL)) {
+        if (!array_key_exists('email', $values) || !filter_var($values['email'], FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = true;
         }
-        if (!array_key_exists('subject', $form) || strlen($form['subject']) < 1) {
+        if (!array_key_exists('subject', $values) || strlen($values['subject']) < 1) {
             $errors['subject'] = true;
         }
-        if (!array_key_exists('message', $form) || strlen($form['message']) < 1) {
+        if (!array_key_exists('message', $values) || strlen($values['message']) < 1) {
             $errors['message'] = true;
         }
 
         if (count($errors) < 1) {
-            $body = "New message sent from loickpiera.com by ".$form['name']."\r\n"
+            $body = "New message sent from loickpiera.com by ".$values['name']."\r\n"
                    ."====================================\r\n"
-                   .$form['message'];
+                   .$values['message'];
 
             $message = \Swift_Message::newInstance()
-                ->setSubject('[loickpiera.com] '.$form['subject'])
+                ->setSubject('[loickpiera.com] '.$values['subject'])
                 ->setFrom(array($app['contact.from']))
                 ->setTo(array($app['contact.to']))
                 ->setBody($body)
@@ -94,7 +83,7 @@ $app->match('/contact', function (Request $request) use ($app) {
         'submitted' => $submitted,
         'sent' => $sent,
         'errors' => $errors,
-        'form' => $form,
+        'values' => $values,
     ));
 })
 ->method('GET|POST')

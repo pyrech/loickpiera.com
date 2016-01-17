@@ -1,6 +1,114 @@
 {% extends "layout.html" %}
 
 {% block content -%}
+        <section>
+            <div class="section-title">
+                <h2>A propos de moi</h2>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+            </div>
+            <div class="section-content">
+                <p>
+                    Développeur web depuis 2011, actuellement en poste chez
+                    <a class="jolicode" href="http://jolicode.com"><img src="{{ asset('/resources/images/jolicode.svg') }}" alt="JoliCode" /></a>.
+                </p>
+                <p>
+                    Amateur d'Open Source et de veille technologique.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="section-title">
+                <h2>Ce que je sais faire</h2>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li class="php">
+                        <img class="picto" src="{{ asset('/resources/images/skill-php.png') }}" alt="PHP" />
+                        <span class="label">PHP</span>
+                    </li>
+                    <li class="symfony">
+                        <img class="picto" src="{{ asset('/resources/images/skill-symfony.png') }}" alt="Symfony" />
+                        <span class="label">Symfony</span>
+                    </li>
+                    <li class="javascript">
+                        <img class="picto" src="{{ asset('/resources/images/skill-javascript.png') }}" alt="JavaScript" />
+                        <span class="label">JavaScript</span>
+                    </li>
+                    <li class="git">
+                        <img class="picto" src="{{ asset('/resources/images/skill-git.png') }}" alt="GIT" />
+                        <span class="label">GIT</span>
+                    </li>
+                    <li class="linux">
+                        <img class="picto" src="{{ asset('/resources/images/skill-linux.png') }}" alt="Linux" />
+                        <span class="label">Linux</span>
+                    </li>
+                    <li class="mysql">
+                        <img class="picto" src="{{ asset('/resources/images/skill-mysql.png') }}" alt="MySQL" />
+                        <span class="label">MySQL</span>
+                    </li>
+                    <li class="html">
+                        <img class="picto" src="{{ asset('/resources/images/skill-html.png') }}" alt="HTML5" />
+                        <span class="label">HTML5</span>
+                    </li>
+                    <li class="css">
+                        <img class="picto" src="{{ asset('/resources/images/skill-css.png') }}" alt="CSS3" />
+                        <span class="label">CSS3</span>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>Pour me suivre ou me faire coucou</h2>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li class="twitter">
+                        <a href="https://twitter.com/pyrech">
+                            <img class="picto" src="{{ asset('/resources/images/social-twitter.png') }}" alt="Twitter" />
+                            <span class="label">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="github">
+                        <a href="https://github.com/pyrech">
+                            <img class="picto" src="{{ asset('/resources/images/social-github.png') }}" alt="GitHub" />
+                            <span class="label">GitHub</span>
+                        </a>
+                    </li>
+                    <li class="linkedin">
+                        <a href="http://fr.linkedin.com/in/loickpiera">
+                            <img class="picto" src="{{ asset('/resources/images/social-linkedin.png') }}" alt="LinkedIn" />
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>... ou m'envoyer un message :</h2>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+            </div>
+            <div class="section-content">
+                {{ include('contact-form.html', {'submitted': false, 'sent': false}) }}
+            </div>
+        </section>
+
+        {#
             <div class="grid3 line">
                 <div class="mod multi-block">
                     <section class="site-block presentation">
@@ -54,47 +162,47 @@
                         <ul>
                             <li class="php">
                                 <div class="tile front">
-                                    <span class="visually-hidden">PHP</span>
+                                    <span>PHP</span>
                                 </div>
                             </li>
                             <li class="java">
                                 <div class="tile front">
-                                    <span class="visually-hidden">Java</span>
+                                    <span>Java</span>
                                 </div>
                             </li>
                             <li class="linux">
                                 <div class="tile front">
-                                    <span class="visually-hidden">Linux</span>
+                                    <span>Linux</span>
                                 </div>
                             </li>
                             <li class="mysql">
                                 <div class="tile front">
-                                    <span class="visually-hidden">MySQL</span>
+                                    <span>MySQL</span>
                                 </div>
                             </li>
                             <li class="html">
                                 <div class="tile front">
-                                    <span class="visually-hidden">xHTML / HTML5</span>
+                                    <span>xHTML / HTML5</span>
                                 </div>
                             </li>
                             <li class="git">
                                 <div class="tile front">
-                                    <span class="visually-hidden">GIT</span>
+                                    <span>GIT</span>
                                 </div>
                             </li>
                             <li class="css">
                                 <div class="tile front">
-                                    <span class="visually-hidden">CSS2 / CSS3</span>
+                                    <span>CSS2 / CSS3</span>
                                 </div>
                             </li>
                             <li class="js">
                                 <div class="tile front">
-                                    <span class="visually-hidden">JavaScript</span>
+                                    <span>JavaScript</span>
                                 </div>
                             </li>
                             <li class="seo">
                                 <div class="tile front">
-                                    <span class="visually-hidden">SEO</span>
+                                    <span>SEO</span>
                                 </div>
                             </li>
                         </ul>
@@ -133,4 +241,5 @@
                     </section>
                 </div>
             </div>
+            #}
 {% endblock %}
