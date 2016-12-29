@@ -42,11 +42,17 @@
             h1 {
                 margin-bottom: 60px;
             }
-            img {
-                position: fixed;
-                bottom: 0;
-                right: 0;
-                width: 100px;
+            .elephpant {
+                width: 90px;
+                float: right;
+            }
+            @media screen and (min-width:900px) {
+                .elephpant {
+                    float: none;
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                }
             }
             .smooth {
                 padding: 0 2px;
@@ -119,6 +125,6 @@
             <p>I'm also a big fan of <a class="smooth github" href="https://github.com/pyrech">open source</a> and use a lot free software. I maintain some <a class="smooth github" href="https://github.com/pyrech/composer-changelogs">open</a> <a class="smooth github" href="https://github.com/jolicode/JoliNotif">source</a> <a class="smooth github" href="https://github.com/jolicode/GifExceptionBundle">packages</a> too.</p>
             <p>Finally you can follow me on <a class="smooth twitter" href="https://twitter.com/pyrech">twitter</a> or send me <a class="smooth email" href="mailto:pyrech@gmail.com">an email</a>.</p>
         </div>
-        <img src="elephpant.png" alt="PHP's mascot" />
+        <img class="elephpant" src="elephpant.png?1483048111" alt="PHP's mascot" />
     </body>
 </html>
