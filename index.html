@@ -21,7 +21,7 @@
                 color: #CACACA;
                 font-family: "OpenSans";
                 font-weight: normal;
-                font-size: 25px;
+                font-size: 16px;
             }
             a, strong {
                 color: white;
@@ -29,24 +29,37 @@
                 text-decoration: none;
             }
             .content {
-                margin: 50px 20px;
-                text-align: center;
+                margin: 20px 20px 50px;
+                text-align: justify;
             }
-            @media screen and (min-width:500px) {
-                .content {
-                    max-width: 75%;
-                    margin: 100px auto;
-                    text-align: justify;
-                }
+            .content p,
+            .content ul {
+                font-size: 1.5em;
             }
             h1 {
                 margin-bottom: 60px;
+                font-size: 2em;
+            }
+            @media screen and (min-width:300px)  {
+                .content {
+                    max-width: 90%;
+                    margin: 50px auto;
+                }
+            }
+            @media screen and (min-width:850px) {
+                .content {
+                    max-width: 75%;
+                    margin: 100px auto;
+                }
+                h1 {
+                    font-size: 3em;
+                }
             }
             .elephpant {
                 width: 90px;
                 float: right;
             }
-            @media screen and (min-width:900px) {
+            @media screen and (min-width:850px) {
                 .elephpant {
                     float: none;
                     position: fixed;
