@@ -3,7 +3,9 @@ title: "Web, PHP & Symfony"
 linkTitle: "Technical blog"
 
 description: "Find all the blog posts I wrote about the technologies I used daily."
-featured_image: '/images/cover-cloud.jpg'
+featured_image: /images/cover-cloud.jpg
+images:
+  - /images/cover-cloud.jpg
 
 #show_reading_time: true
 

@@ -5,6 +5,8 @@ draft: false
 disable_share: false
 tags: ["biketrip", "velo", "vacances"]
 featured_image: '/images/personal/vacances-velo/velo-coucher-soleil.jpg'
+images:
+- /images/personal/vacances-velo/velo-coucher-soleil.jpg
 ---
 
 Cette année encore, je suis parti en vacances à vélo pendant une dizaine de jours avec des amis.

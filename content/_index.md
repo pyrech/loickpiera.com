@@ -2,7 +2,9 @@
 title: ""
 
 description: "French web developer, PHP enthusiast, loving IoT and Open Source."
-featured_image: '/images/cover-sunset.jpg'
+featured_image: /images/cover-sunset.jpg
+images:
+  - /images/cover-sunset.jpg
 ---
 
 ## About me
