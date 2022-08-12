@@ -1,0 +1,2 @@
+[taxonomyPageList]
+other = "Below you will find articles tagged with “{{ .Title }}”:"
