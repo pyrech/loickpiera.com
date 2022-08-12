@@ -2,7 +2,14 @@
     max-width: 50em;
 }
 
-main a:not(.link) {
+figcaption h4 {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+main a:not(.link):not(.ananke-social-link) {
     font-weight: bold;
     text-decoration: none;
     color: #555;
