@@ -52,6 +52,14 @@
       {{ if .Site.Params.commentoEnable }}
         {{- partial "commento.html" . -}}
       {{ end }}
+        <script src="https://utteranc.es/client.js"
+                repo="pyrech/loickpiera.com"
+                issue-term="title"
+                label="comment"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
       </div>
     </div>
 
