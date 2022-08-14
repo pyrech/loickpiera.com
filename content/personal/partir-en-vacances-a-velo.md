@@ -147,4 +147,4 @@ Partir en vacances à vélo demande un peu d'organisation (et un peu de matérie
 Mais pour peu que vous soyez un minimum préparé, c'est un excellent moyen de découvrir la France (ou ailleurs) sur votre fidèle destrier.
 Le parfait mélange entre activité physique, déconnexion du monde réel et retour à la nature.
 
-Si vous avez des questions ou des infos complémentaires à partager, n'hésitez pas à me contacter sur [twitter](https://twitter.com/pyrech).
+Si vous avez des questions ou des infos complémentaires à partager, n'hésitez pas à laisser un commentaire ou à me contacter sur [twitter](https://twitter.com/pyrech).
