@@ -1,2 +1,8 @@
 [taxonomyPageList]
 other = "Below you will find articles tagged with “{{ .Title }}”:"
+
+[recentTitle]
+other = "Recent article from “{{ .Title }}”"
+
+[allTitle]
+other = "See all content from “{{ .Title }}”"
