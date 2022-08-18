@@ -75,13 +75,16 @@ main ul {
     justify-content: space-between;
 }
 
-.tags {
+.tags .list {
+    margin-right: 10px;
+}
+.summary-tags {
     display: flex;
     flex-flow: row wrap;
     gap: 8px;
     margin-top: 2em;
 }
-.tags .tag {
+.summary-tags .tag {
     /* override the `margin: auto;` rule which applies to all divs and iframes, defined in main.css */
     margin: 0;
 

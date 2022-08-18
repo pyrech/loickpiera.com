@@ -8,7 +8,7 @@
             {{end}}
 
             {{ with (.GetTerms "tags") }}
-            <div class="tags">
+            <div class="summary-tags">
                 {{ range . }}
                 <div class="tag">
                     <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
