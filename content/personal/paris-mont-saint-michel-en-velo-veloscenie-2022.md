@@ -253,6 +253,8 @@ Sur ces vacances, on aura effectué :
 - 4100 m de dénivelé positif ;
 - 44 heures de déplacement à vélo.
 
+{{< figure src="/images/personal/veloscenie-2022/trace-gps.jpg" title="La trace GPS de notre aventure" alt="La trace GPS de notre aventure">}}
+
 À noter toutefois que le début de parcours (notamment entre Limours et Saint-Arnoult) est très chaotique et on se retrouve plusieurs fois dans des passages un peu techniques en pleine forêt.
 Un vélo de route aura de grosses difficultés à passer par là, d'autant plus s'il est chargé.
 
