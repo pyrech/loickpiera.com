@@ -11,7 +11,7 @@ images:
 
 Cette année encore, je suis parti en vacances à vélo pendant une dizaine de jours avec des amis.
 Pour notre 4ᵉ voyage à vélo, l'objectif était de suivre la [Véloscénie](https://www.veloscenie.com/),
-l'itinéraire cyclable qui relie Paris et le Mont-Saint-Michel (j'en ferai probablement un article dédié).
+l'itinéraire cyclable qui relie Paris et le Mont-Saint-Michel (j'en ai fait un [article dédié](/personal/paris-mont-saint-michel-en-velo-veloscenie-2022/)).
 Dans cet article, je vais expliquer un peu comment nous nous organisons pour partir à vélo, ainsi que quelques astuces tirées de nos expériences passées.
 
 ## Équipement
