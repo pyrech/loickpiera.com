@@ -95,7 +95,8 @@ Gros contraste avec les 2 derniers jours de canicule que l'on a eu.
 Mais ça ne nous aura pas empêché d'enchaîner les kilomètres avec presque 90 parcourus dans la journée.
 
 On termine la journée dans un camping à proximité de Alençon, histoire de profiter d'un peu de confort, pour recharger les batteries et le moral des troupes (photos 4 et 5).
-Petit bémol, le camping nous a un peu éloigner de l'itinéraire. Et  se méritait avec une ultime grosse montée pas vraiment bienvenue en fin de journée.
+Petit bémol, le camping nous a un peu éloigner de l'itinéraire.
+Et il se méritait avec une ultime grosse montée pas vraiment bienvenue en fin de journée.
 
 ### Jour 5
 
@@ -105,18 +106,18 @@ On se rapproche de l'objectif !
 Départ du camping un peu retardé pour cause d'entretien des vélos.
 On a récupéré l'itinéraire de la Véloscenie.
 
-Après Alençon, la Véloscénie se propose 2 variantes :
+Après Alençon, la Véloscénie propose 2 variantes :
 - un parcours qui part un peu plus au nord, plus joli, mais aussi avec plus de dénivelé ;
 - un parcours qui passe un peu plus au sud, mais un peu plus plat.
 
 Le camping de la veille nous a rapproché de l'itinéraire nord que l'on a donc entamé en début de journée.
 Après quelques montées, on s'est dit qu'on allait plutôt rejoindre l'itinéraire sud pour préserver la force et le moral des troupes.
-Je profite d'ailleurs d'une pause réglage de dérailleur pour sortir le drone et capture le relief aux alentours (photo 1).
+Je profite d'ailleurs d'une pause réglage de dérailleur pour sortir le drone et capturer le relief aux alentours (photo 1).
 
 La suite du parcours (l'itinéraire sud donc) nous a fait suivre une looongue piste vélo, une nouvelle fois basée sur une ancienne voie ferrée.
 Par contre, la surface un peu sablonneuse de la route nous a bien ralenti, ce n'était pas vraiment marrant.
 
-Petite pause le midi autour de l'étang de Saint-Denis-sur-Sarthon (photo 2, et j'ai oublié de sortir le drone sur place😭).
+Petite pause le midi autour de l'étang de Saint-Denis-sur-Sarthon (photo 2, et j'ai oublié de sortir le drone 😭).
 Il y avait un [parcours de pumptrack](https://www.ourouler.fr/pumptrack-saint-denis-sur-sarthon) sur place.
 L'occasion de tester, c'était marrant.
 Et non, Julie, ça n'est pas du tout fait pour y aller avec un vélo chargé de bagage 🙃.
@@ -124,8 +125,8 @@ Et non, Julie, ça n'est pas du tout fait pour y aller avec un vélo chargé de 
 Reprise de l'itinéraire sur cette interminable piste sableuse.
 Au bout d'un moment, on a fait 2 groupes, afin de prendre de l'avance :
 - on a coupé par une départementale pour gagner en distance ;
-- faire les courses ;
-- trouver un endroit pour bivouaquer.
+- fait les courses ;
+- et trouvé un endroit pour bivouaquer.
 
 Résultat, après plus de 75 km, on finit la journée en se posant en bordure de la Véloscenie dans un prè (photos 3, 4, 5).
 
@@ -142,7 +143,7 @@ Plutôt que de manger en ville, on a repris le parcours pour trouver un coin un 
 On a fini par se poser en bordure de la piste cyclable, sur un emplacement pique-nique avec une table, pour profiter au max de ces pizzas (photos 1 et 2).
 
 En reprenant la route, on finit une nouvelle fois par diviser en 2 le groupe pour prendre de l'avance avec les courses.
-On se retrouve finalement tous au bord de la Sélune (photos 3 et 4).
+On se retrouve finalement tous au bord de la Sélune, le fleuve qui se jette dans la Baie du Mont (photos 3 et 4).
 
 On cherchait à aller dans un camping situé pas trop loin du Mont Saint-Michel.
 Mais la plupart sont pleins et souvent chers.
@@ -240,14 +241,14 @@ Nous n'avions pas beaucoup de choix dans les utilitaires disponibles, on se retr
 
 {{< figure src="/images/personal/veloscenie-2022/location-camion.jpg" title="Le camion en aller-simple" alt="Le camion en aller-simple">}}
 
-Au total, le coût du TER + la location du camion + le péage et l'essence, on revient quasiment au même prix que le billet de TGV, environ 200 € pour 3 personnes.
+Au total, le coût du TER + la location du camion + le péage et l'essence nous revient quasiment au même prix que le billet de TGV, environ 200 € pour 3 personnes.
 
 Arrivés à l'agence de destination, et une fois le camion rendu, il ne nous restera plus que 10 km de vélo pour arriver chez moi et terminer officiellement ces vacances.
 
 ## Conclusion
 
 Sur ces vacances, on aura effectué :
-- pas loin de 650 km en 10 jours ;
+- un peu plus de 650 km en 10 jours et demi ;
 - une moyenne de 60 km par jour ;
 - 4100 m de dénivelé positif ;
 - 44 heures de déplacement à vélo.
