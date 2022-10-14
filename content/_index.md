@@ -30,7 +30,8 @@ I'm a big fan of open source and use a lot free software. I also maintain some o
 
 Here is some conferences I gave:
 
-- [🇫🇷 Monitorer les locaux de JoliCode](/conference-monitoring-locaux-jolicode)
+- [🇫🇷 Des workers PHP avec Symfony Messenger et systemd](https://speakerdeck.com/pyrech/des-workers-php-avec-symfony-messenger-et-systemd)
+- [🇫🇷 Monitorer les locaux de JoliCode](https://speakerdeck.com/pyrech/monitorer-nos-locaux-avec-de-liot-du-php-et-influxdb)
 - [🇫🇷 Migrer vers Symfony Flex](https://pyrech.github.io/migrer-vers-symfony-flex-conf/index.html?full#coverpage)
 - [🇫🇷 PHP - The wrong way](https://jolicode.github.io/php-the-wrong-way-conf/slides/index.html?full#coverpage)
 - [🇫🇷 PHP WTF](https://pyrech.github.io/php-wtf)
