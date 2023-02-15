@@ -28,6 +28,8 @@ params:
       url: "https://github.com/pyrech"
     - name: twitter
       url: "https://twitter.com/pyrech"
+    - name: mastodon
+      url: "https://mastodon.social/@pyrech"
     - name: instagram
       url: "https://instagram.com/loick_p"
 
