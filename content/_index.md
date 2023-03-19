@@ -39,4 +39,4 @@ Here is some conferences I gave:
 
 ## Contact
 
-You can contact me on [twitter](https://twitter.com/pyrech) or send me [an email](mailto:pyrech@gmail.com).
+You can contact me on [Twitter](https://twitter.com/pyrech), [Mastodon](https://mastodon.social/@pyrech) or send me [an email](mailto:pyrech@gmail.com).
