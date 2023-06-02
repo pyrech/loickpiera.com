@@ -23,6 +23,7 @@ I'm a big fan of open source and use a lot free software. I also maintain some o
 - [composer-changelogs](https://github.com/pyrech/composer-changelogs)
 - [Secret Santa](https://github.com/jolicode/secret-santa)
 - [JoliCode's Docker starter kit](https://github.com/jolicode/docker-starter)
+- [Castor](https://github.com/jolicode/castor)
 - [GifExceptionBundle](https://github.com/jolicode/GifExceptionBundle)
 - [seo-override](https://github.com/jolicode/seo-override)
 
