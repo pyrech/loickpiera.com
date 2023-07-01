@@ -17,15 +17,19 @@ From time to time, I share pictures taken with my drone (a DJI Mavic 2 pro) on m
 
 ## Open Source
 
-I'm a big fan of open source and use a lot free software. I also maintain some open source packages and applications:
+I'm a big fan of open source and use a lot free software.
 
+Packages I maintain:
+- [Castor](https://github.com/jolicode/castor)
 - [JoliNotif](https://github.com/jolicode/JoliNotif)
 - [composer-changelogs](https://github.com/pyrech/composer-changelogs)
-- [Secret Santa](https://github.com/jolicode/secret-santa)
 - [JoliCode's Docker starter kit](https://github.com/jolicode/docker-starter)
-- [Castor](https://github.com/jolicode/castor)
 - [GifExceptionBundle](https://github.com/jolicode/GifExceptionBundle)
 - [seo-override](https://github.com/jolicode/seo-override)
+
+Applications I created:
+- [Secret Santa](https://github.com/jolicode/secret-santa) a web application to start secret santa with your Slack/Discord team
+- [3dfollow](https://github.com/pyrech/3dfollow), a web application to help you manage your 3d printing stuff
 
 ## Conferences
 
