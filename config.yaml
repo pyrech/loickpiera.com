@@ -30,6 +30,7 @@ params:
       url: "https://twitter.com/pyrech"
     - name: mastodon
       url: "https://mastodon.social/@pyrech"
+      rel: me noopener
     - name: instagram
       url: "https://instagram.com/loick_p"
 
