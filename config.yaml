@@ -10,6 +10,8 @@ sitemap:
 
 enableRobotsTXT: false
 
+paginate: 12
+
 params:
   text_color: ""
   author: ""
