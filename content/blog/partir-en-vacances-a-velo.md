@@ -4,9 +4,9 @@ date: 2022-08-12T22:00:00+02:00
 draft: false
 disable_share: false
 tags: ["biketrip", "velo", "vacances"]
-featured_image: /images/personal/vacances-velo/velo-coucher-soleil.jpg
+featured_image: /images/blog/vacances-velo/velo-coucher-soleil.jpg
 images:
-- /images/personal/vacances-velo/velo-coucher-soleil.jpg
+- /images/blog/vacances-velo/velo-coucher-soleil.jpg
 ---
 
 Cette année encore, je suis parti en vacances à vélo pendant une dizaine de jours avec des amis.
@@ -21,7 +21,7 @@ Dans cet article, je vais expliquer un peu comment nous nous organisons pour par
 Pour ma part, je suis équipé d'un VTT tout suspendu (donc pas possible de fixer des sacoches).
 Tout mon matériel se trouve dans une sacoche étanche dans une remorque monoroue, attachée à la roue arrière.
 
-{{< figure src="/images/personal/vacances-velo/remorque.jpg" title="La remorque monoroue attachée sur mon vélo" alt="La remorque monoroue attachée sur mon vélo">}}
+{{< figure src="/images/blog/vacances-velo/remorque.jpg" title="La remorque monoroue attachée sur mon vélo" alt="La remorque monoroue attachée sur mon vélo">}}
 
 Petite astuce pour la remorque : j'installe un filet élastique par-dessus, ça me permet d'avoir encore plus de rangement :
 j'y glisse notamment ~~mon camelbak~~ ma poche à eau (pour ne pas l'avoir dans le dos), le bidon d'eau, la chaise pliante (pour qu'elle soit plus facilement accessible sans devoir fouiller dans le sac de la remorque).
@@ -30,7 +30,7 @@ Mes amis utilisent, eux, des sacoches (de la marque Ortlieb) qui sont étanches 
 Ces sacoches sont fixées à l'avant et à l'arrière de leurs vélos, à gauche et à droite.
 Attention à bien répartir le poids, en mettant au maximum le poids dans les sacoches arrière, afin que le vélo reste facile à diriger (surtout dans les chemins sinueux).
 
-{{< figure src="/images/personal/vacances-velo/sacoches.jpg" title="Les sacoches accrochées sur le vélo" alt="Les sacoches accrochées sur le vélo">}}
+{{< figure src="/images/blog/vacances-velo/sacoches.jpg" title="Les sacoches accrochées sur le vélo" alt="Les sacoches accrochées sur le vélo">}}
 
 ### Mécanique
 
@@ -126,7 +126,7 @@ Pendant qu'une partie des troupes est en course, une personne cherche (sur Googl
 - éloigné des habitations ;
 - à l'abri des regards, surtout quand on se pose dans des prés ou des champs (qui sont donc des propriétés privées).
 
-{{< figure src="/images/personal/vacances-velo/bivouac.jpg" title="Un spot de bivouac parfait" alt="Un spot de bivouac parfait">}}
+{{< figure src="/images/blog/vacances-velo/bivouac.jpg" title="Un spot de bivouac parfait" alt="Un spot de bivouac parfait">}}
 
 ## Où partir ?
 

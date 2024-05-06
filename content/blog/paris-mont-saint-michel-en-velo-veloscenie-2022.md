@@ -5,9 +5,9 @@ date: 2022-08-19T00:00:00+02:00
 draft: false
 disable_share: false
 tags: ["biketrip", "velo", "vacances"]
-featured_image: /images/personal/veloscenie-2022/mont-saint-michel.jpg
+featured_image: /images/blog/veloscenie-2022/mont-saint-michel.jpg
 images:
-- /images/personal/veloscenie-2022/arrivee-mont-saint-michel.jpg
+- /images/blog/veloscenie-2022/arrivee-mont-saint-michel.jpg
 ---
 
 Après avoir parcouru [la Loire à Vélo](https://www.loireavelo.fr/) en 2018, fait un tour dans les Vosges en 2020, puis la [ViaRhona](https://www.viarhona.com/) en 2021, nous avons effectué cet été, toujours avec mes amis, un nouveau voyage à vélo, en parcourant cette fois-ci la [Véloscénie](https://www.veloscenie.com/).
@@ -234,12 +234,12 @@ Comme nous n'avons pas pu avoir de train pour rentrer sur Paris avec les vélos,
 On retourne donc à Saint-Malo, on prend un TER en direction de Rennes avec les vélos.
 Un wagon avec emplacement vélo est libre, on en profite pour y mettre vélos et bagages.
 
-{{< figure src="/images/personal/veloscenie-2022/velos-ter.jpg" title="Les vélos et les bagages dans le TER" alt="Les vélos et les bagages dans le TER">}}
+{{< figure src="/images/blog/veloscenie-2022/velos-ter.jpg" title="Les vélos et les bagages dans le TER" alt="Les vélos et les bagages dans le TER">}}
 
 Arrivés à Rennes, on file chez Rentacar pour récupérer le véhicule qu'on a loué en aller-simple.
 Nous n'avions pas beaucoup de choix dans les utilitaires disponibles, on se retrouve donc avec un camion bien trop gros pour notre besoin.
 
-{{< figure src="/images/personal/veloscenie-2022/location-camion.jpg" title="Le camion en aller-simple" alt="Le camion en aller-simple">}}
+{{< figure src="/images/blog/veloscenie-2022/location-camion.jpg" title="Le camion en aller-simple" alt="Le camion en aller-simple">}}
 
 Au total, le coût du TER + la location du camion + le péage et l'essence nous revient quasiment au même prix que le billet de TGV, environ 200 € pour 3 personnes.
 
@@ -253,7 +253,7 @@ Sur ces vacances, on aura effectué :
 - 4100 m de dénivelé positif ;
 - 44 heures de déplacement à vélo.
 
-{{< figure src="/images/personal/veloscenie-2022/trace-gps.jpg" title="La trace GPS de notre aventure" alt="La trace GPS de notre aventure">}}
+{{< figure src="/images/blog/veloscenie-2022/trace-gps.jpg" title="La trace GPS de notre aventure" alt="La trace GPS de notre aventure">}}
 
 À noter toutefois que le début de parcours (notamment entre Limours et Saint-Arnoult) est très chaotique et on se retrouve plusieurs fois dans des passages un peu techniques en pleine forêt.
 Un vélo de route aura de grosses difficultés à passer par là, d'autant plus s'il est chargé.

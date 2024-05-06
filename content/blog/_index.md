@@ -1,8 +1,8 @@
 ---
-title: "Personal blog"
-linkTitle: "Personal blog"
+title: "Blog"
+linkTitle: "Blog"
 
-description: "Some stuff about my drone, my bike trips and my life"
+description: "Random stuff about technical tips, bike trips, Home Assistant, etc."
 featured_image: /images/cover-boat.jpg
 images:
 - /images/cover-boat.jpg

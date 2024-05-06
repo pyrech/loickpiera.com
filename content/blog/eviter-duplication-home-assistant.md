@@ -128,7 +128,7 @@ les widgets qui vont bien dans l'interface graphique.
 
 Exemple quand on appelle le script depuis les outils de développement :
 
-{{< figure src="/images/personal/home-assistant-duplication/ha-outil-developpement-script.jpg" title="Le rendu de notre script dans les outils de dev de Home Assistant" alt="Le rendu de notre script dans les outils de dev de Home Assistant">}}
+{{< figure src="/images/blog/home-assistant-duplication/ha-outil-developpement-script.jpg" title="Le rendu de notre script dans les outils de dev de Home Assistant" alt="Le rendu de notre script dans les outils de dev de Home Assistant">}}
 
 Si je reprends mon exemple d'automation précédent, voici ce qu'elle devient :
 
