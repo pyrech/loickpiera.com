@@ -4,7 +4,7 @@ title: "Vacances à vélo - Véloscénie 2022"
 date: 2022-08-19T00:00:00+02:00
 draft: false
 disable_share: false
-tags: ["biketrip", "velo", "vacances"]
+tags: ["🇫🇷 français", "biketrip", "velo", "vacances"]
 featured_image: /images/blog/veloscenie-2022/mont-saint-michel.jpg
 images:
 - /images/blog/veloscenie-2022/arrivee-mont-saint-michel.jpg

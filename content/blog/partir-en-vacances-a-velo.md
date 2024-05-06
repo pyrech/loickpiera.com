@@ -3,7 +3,7 @@ title: "Partir en vacances à vélo"
 date: 2022-08-12T22:00:00+02:00
 draft: false
 disable_share: false
-tags: ["biketrip", "velo", "vacances"]
+tags: ["🇫🇷 français", "biketrip", "velo", "vacances"]
 featured_image: /images/blog/vacances-velo/velo-coucher-soleil.jpg
 images:
 - /images/blog/vacances-velo/velo-coucher-soleil.jpg
