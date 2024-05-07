@@ -46,22 +46,3 @@ menu:
       name: Contact
       weight: 1000000
       url: /#contact
-
-deployment:
-  matchers:
-    # Cache static assets for 1 year.
-    - pattern = "^.+\\.(js|css|svg|ttf)$"
-      cacheControl = "max-age=31536000, no-transform, public"
-      gzip = true
-
-    - pattern = "^.+\\.(png|jpg|jpeg|gif|ico)$"
-      cacheControl = "max-age=31536000, no-transform, public"
-      gzip = false
-
-    # Set custom content type for /sitemap.xml
-    - pattern = "^sitemap\\.xml$"
-      contentType = "application/xml"
-      gzip = true
-
-    - pattern = "^.+\\.(html|xml|json)$"
-      gzip = true
