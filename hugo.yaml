@@ -35,6 +35,10 @@ params:
       rel: me noopener
     - name: instagram
       url: "https://instagram.com/loick_p"
+    - name: rss
+      url: "/index.xml"
+      rel: alternate
+      type: "application/rss+xml"
 
 
 Social:
