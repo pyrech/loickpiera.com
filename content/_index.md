@@ -1,25 +1,26 @@
 ---
 title: ""
-
-description: "French web developer, PHP enthusiast, loving IoT and Open Source."
+description: "Développeur web, passionné de PHP, et avec une forte apétence pour l'IoT et l'open source."
 featured_image: /images/cover-sunset.jpg
 images:
   - /images/cover-sunset.jpg
 ---
 
-## About me
+## A propos
 
-My name is Loïck Piera. I'm a web developer since 2011. I work at [JoliCode](https://jolicode.com/) since  2015 and I really enjoy it (ie. please don't spam me with job offers).
+Je m'appelle Loïck Piera. Je suis développeur web depuis 2011 et je travaille à [JoliCode](https://jolicode.com/) depuis 2015 et je m'y éclate depuis (c.a.d, merci de ne pas me spammer avec des offres d'emploi).
 
-My daily job mostly consists in building web applications with Symfony and PHP.
+Mon travail quotidien consiste principalement à développer des applications web avec Symfony and PHP.
 
-From time to time, I share pictures taken with my drone (a DJI Mavic 2 pro) on my [instagram account](https://instagram.com/loick_p).
+J'ai écrit quelques articles techniques sur le blog de [JoliCode](https://jolicode.com/blog/auteur/loick-piera) mais il m'arrive de partager sur [mon blog](/blog/) des astuces sur [la domotique](/tags/domotique), de parler de [voyage à vélo](/tags/biketrip), etc.
+
+De temps en temps, je partage également des photos prises avec mon drone (un DJI Mavic 2 pro) sur mon [compte instagram](https://instagram.com/loick_p).
 
 ## Open Source
 
-I'm a big fan of open source and use a lot free software.
+J'aime beaucoup l'open source et j'utilise pas mal de logiciels libres.
 
-Packages I maintain:
+Quelques projets et bibliothèques que je maintiens :
 - [Castor](https://github.com/jolicode/castor)
 - [JoliNotif](https://github.com/jolicode/JoliNotif)
 - [composer-changelogs](https://github.com/pyrech/composer-changelogs)
@@ -27,13 +28,13 @@ Packages I maintain:
 - [GifExceptionBundle](https://github.com/jolicode/GifExceptionBundle)
 - [seo-override](https://github.com/jolicode/seo-override)
 
-Applications I created:
-- [Secret Santa](https://github.com/jolicode/secret-santa) a web application to start secret santa with your Slack/Discord team
-- [3dfollow](https://github.com/pyrech/3dfollow), a web application to help you manage your 3d printing stuff
+Quelques applications que j'ai créée :
+- [Secret Santa](https://github.com/jolicode/secret-santa) une application web pour organiser un secret santa avec votre team Slack ou Discord
+- [3dfollow](https://github.com/pyrech/3dfollow), une application web pour aider à gérer son équipement d'impression 3d (stock de filament, historique d'impressions et coûts, etc.)
 
-## Conferences
+## Conférences
 
-Here is some conferences I gave:
+Quelques conférences que j'ai donné :
 
 - [🇫🇷 Des workers PHP avec Symfony Messenger et systemd](https://speakerdeck.com/pyrech/des-workers-php-avec-symfony-messenger-et-systemd)
 - [🇫🇷 Monitorer les locaux de JoliCode](https://speakerdeck.com/pyrech/monitorer-nos-locaux-avec-de-liot-du-php-et-influxdb)
@@ -41,7 +42,3 @@ Here is some conferences I gave:
 - [🇫🇷 PHP - The wrong way](https://jolicode.github.io/php-the-wrong-way-conf/slides/index.html?full#coverpage)
 - [🇫🇷 PHP WTF](https://pyrech.github.io/php-wtf)
 - [🇫🇷 A la recherche d'incompatibilités avec PHP 7](https://jolicode.github.io/php7cc-conf)
-
-## Contact
-
-You can contact me on [Twitter](https://twitter.com/pyrech), [Mastodon](https://mastodon.social/@pyrech) or send me [an email](mailto:pyrech@gmail.com).

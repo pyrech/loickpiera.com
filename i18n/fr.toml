@@ -1,0 +1,11 @@
+[taxonomyPageList]
+other = "Retrouvez tous les articles taggués avec “{{ .Title }}” :"
+
+[recentTitle]
+other = "Récents articles"
+
+[allTitle]
+other = "Voir tout les articles"
+
+[readMore]
+other = "Lire la suite"

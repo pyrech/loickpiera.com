@@ -1,0 +1,18 @@
+{{ if .IsTranslated }}
+<div class="switch-lang f5 f4-ns fw4 w-100-m mt3 mt0-l {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr3" }}">
+    <div class="ph1 dib ph3-l">
+        <span class="lang-emoji o-60">{{ .Language.Params.languageEmoji }}</span>
+        <span class="no-underline white-60">{{ .Language.LanguageName }}<span class="dn dib-l pl2-l">🞃</span></span>
+    </div>
+    <ul class="lang-dropdown pointer ph1 ma0 ph3-l">
+        {{ range .AllTranslations }}
+        {{ if ne .Language $.Language }}
+        <li class="dib db-l pv2-l">
+            <span class="lang-emoji">{{ .Language.Params.languageEmoji }}</span>
+            <a class="hover-white no-underline white-90" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

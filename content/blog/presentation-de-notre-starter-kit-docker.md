@@ -1,9 +1,10 @@
 ---
 title: "Présentation de notre starter-kit Docker"
+locale: fr
 date: 2019-07-08T10:42:00+02:00
 draft: false
 disable_share: true
-tags: ["🇫🇷 français", "jolicode", "tech"]
+tags: ["jolicode", "tech"]
 ---
 
 > Chez JoliCode, la plupart de nos projets (clients ou internes) utilisent Docker, principalement pour simplifier l’expérience développeur en local. Quelques uns de nos gros projets ont une architecture suffisamment complexe pour justifier un autre fonctionnement (avec le binaire Symfony par exemple), mais pour tous les autres, l’infrastructure est souvent similaire : NGINX, PHP-FPM et une base de données (MariaDB ou PostgreSQL).

@@ -1,9 +1,10 @@
 ---
 title: "Simplifier la génération de certificats SSL avec Let’s Encrypt"
+locale: fr
 date: 2023-05-10T10:42:00+02:00
 draft: false
 disable_share: true
-tags: ["🇫🇷 français", "jolicode", "tech"]
+tags: ["jolicode", "tech"]
 ---
 
 Nous utilisons Ansible pour provisionner les serveurs et/ou déployer nos applications. Au fil des années, nous avons rassemblé notre expérience avec Ansible au sein d’un outil interne qui se veut utilisable facilement par tout le monde chez nous, y compris les personnes moins à l’aise avec l’OPS.

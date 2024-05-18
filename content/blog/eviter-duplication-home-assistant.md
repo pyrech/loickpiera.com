@@ -1,9 +1,10 @@
 ---
 title: "Éviter la duplication dans Home Assistant"
+locale: fr
 date: 2024-05-06T23:00:00+02:00
 draft: false
 disable_share: false
-tags: ["🇫🇷 français", "home-assistant", "domotique"]
+tags: ["home-assistant", "domotique"]
 featured_image: /images/cover-home-assistant.png
 images:
 - /images/cover-home-assistant.png

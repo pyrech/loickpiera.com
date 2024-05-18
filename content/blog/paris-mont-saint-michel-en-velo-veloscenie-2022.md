@@ -1,10 +1,11 @@
 ---
 title: "Vacances à vélo - Véloscénie 2022"
-"description": "De Paris au Mont-Saint-Michel à vélo"
+locale: fr
+description: "De Paris au Mont-Saint-Michel à vélo"
 date: 2022-08-19T00:00:00+02:00
 draft: false
 disable_share: false
-tags: ["🇫🇷 français", "biketrip", "velo", "vacances"]
+tags: ["biketrip", "velo", "vacances"]
 featured_image: /images/blog/veloscenie-2022/mont-saint-michel.jpg
 images:
 - /images/blog/veloscenie-2022/arrivee-mont-saint-michel.jpg

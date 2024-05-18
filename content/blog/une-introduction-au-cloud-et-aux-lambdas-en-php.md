@@ -1,9 +1,10 @@
 ---
 title: "Une introduction au cloud et aux lambdas en PHP"
+locale: fr
 date: 2020-03-25T10:42:00+02:00
 draft: false
 disable_share: true
-tags: ["🇫🇷 français", "jolicode", "tech"]
+tags: ["jolicode", "tech"]
 ---
 
 > En cette période de confinement, je vous propose de vous évader quelques instants et de partir à la découverte du monde merveilleux du cloud et de démystifier l’utilisation des fonctions en tant que service, notamment grâce aux lambdas d’Amazon.

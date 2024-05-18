@@ -1,9 +1,11 @@
 ---
 title: "Symfony, reverse proxies et protection par IP"
+locale: fr
+slug: symfony-reverse-proxies-et-protection-par-ip
 date: 2023-04-07T10:42:00+02:00
 draft: false
 disable_share: true
-tags: ["🇫🇷 français", "jolicode", "tech"]
+tags: ["jolicode", "tech"]
 ---
 
 Suite à un souci rencontré sur un de mes projets, j’ai dû me plonger dans le fonctionnement de la protection par IP dans nos applicatifs Symfony lorsque des reverse proxies se trouvent devant. Après quelques recherches et tâtonnements, je me suis dit que c’était l’occasion parfaite pour reprendre les bases, puis expliquer comment trouver l’origine du problème et le résoudre.

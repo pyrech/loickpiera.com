@@ -1,5 +1,4 @@
 baseURL: 'https://loickpiera.com/'
-languageCode: en-us
 title: Loïck Piera
 theme: ananke
 
@@ -12,13 +11,43 @@ enableRobotsTXT: false
 
 paginate: 12
 
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: false
+languages:
+  fr:
+    languageName: Français
+    languageCode: fr
+    languageDirection: ltr
+    params:
+      languageEmoji: 🇫🇷
+    menu:
+      main:
+        - name: Blog
+          pageRef: blog
+          weight: 10
+        - name: Contact
+          pageRef: contact
+          weight: 20
+  en:
+    languageName: English
+    languageCode: en
+    languageDirection: ltr
+    params:
+      languageEmoji: 🇬🇧
+    menu:
+      main:
+        - name: Blog
+          pageRef: blog
+          weight: 10
+        - name: Contact
+          pageRef: contact
+          weight: 20
+
 params:
-  text_color: ""
-  author: ""
+  author: "Loick Piera"
   favicon: ""
   site_logo: ""
   description: ""
-  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class: bg-black
   recent_posts_number: 3
   date_format: ":date_medium"
@@ -43,10 +72,3 @@ params:
 
 Social:
   twitter: pyrech
-
-menu:
-  main:
-    - identifier: contact
-      name: Contact
-      weight: 1000000
-      url: /#contact

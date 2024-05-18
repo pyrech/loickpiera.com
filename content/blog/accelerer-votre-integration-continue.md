@@ -1,9 +1,10 @@
 ---
 title: "Accélerer votre Intégration Continue"
+locale: fr
 date: 2020-12-10T10:42:00+02:00
 draft: false
 disable_share: true
-tags: ["🇫🇷 français", "jolicode", "tech"]
+tags: ["jolicode", "tech"]
 ---
 
 > Récemment, j’ai eu l’occasion de passer un peu de temps sur la configuration des CI de plusieurs de nos projets. En effet, après que Travis ait effectué un changement dans son modèle tarifaire, les builds des projets open source l’utilisant mettaient très longtemps avant même de démarrer (parfois plusieurs heures).

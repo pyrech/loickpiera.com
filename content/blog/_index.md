@@ -1,15 +1,11 @@
 ---
 title: "Blog"
 linkTitle: "Blog"
-
-description: "Random stuff about technical tips, bike trips, Home Assistant, etc."
-featured_image: /images/cover-boat.jpg
+translationKey: blog
+description: "Retrouvez ici des articles sur des thèmes variés, que ce soit à propos de domotique, de voyage à vélo, ou encore des articles plus techniques concernant PHP, Symfony."
+featured_image: /images/cover-cloud.jpg
 images:
-- /images/cover-boat.jpg
+- /images/cover-cloud.jpg
 
 show_reading_time: true
-
-menu:
-  main:
-    weight: 20
 ---

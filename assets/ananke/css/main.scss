@@ -1,3 +1,32 @@
+.switch-lang {
+    text-align: left;
+    z-index: 50;
+    position: relative;
+}
+.lang-emoji {
+    width: 20px;
+    display: inline-block;
+}
+.lang-dropdown {
+    display: inline-block;
+    list-style: none;
+}
+@media screen and (min-width: 60em) {
+    .switch-lang {
+        line-height: 2em;
+    }
+    .lang-dropdown {
+        display: none;
+        position: absolute;
+        min-width: 150px;
+        background-color: rgba(0,0,0, 0.3);
+        border-radius: 5px;
+    }
+    .switch-lang:hover .lang-dropdown {
+        display: block;
+    }
+}
+
 .measure-wide {
     max-width: 50em;
 }
