@@ -119,3 +119,16 @@ main ul {
 
     font-size: small;
 }
+
+a.taxonomy-rss {
+    color: #ff6f1a;
+
+    svg {
+        fill: currentColor;
+    }
+
+    .icon svg {
+        width: 32px;
+        height: 32px;
+    }
+}

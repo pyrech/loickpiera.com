@@ -1,0 +1,42 @@
+{{ define "header" }}
+{{/* We can override any block in the baseof file be defining it in the template */}}
+{{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<article class="cf pa3 pa4-m pa4-l">
+    <div class="taxonomy-rss">
+    </div>
+    <div class="mv8 center f4 lh-copy nested-copy-line-height {{ $.Param "text_color" | default "mid-gray" }}">
+        <div class="">
+            <h1 class="f2 near-black di">
+                {{ i18n "taxonomyPageListTitle" . }}
+            </h1>
+            <a href="{{ .Permalink }}/index.xml" target="_blank" class="ml2 taxonomy-rss link-transition link di" title="{{ i18n "taxonomyPageListRss" . }}">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <circle cx="6.18" cy="17.82" r="2.18"></circle>
+                        <path id="scale" d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path>
+                    </svg>
+                </span>
+                <span class="new-window">
+                    {{- partial "new-window-icon.html" . -}}
+                </span>
+            </a>
+        </div>
+
+        <p>
+            {{ i18n "taxonomyPageListContent" . }}
+        </p>
+    </div>
+</article>
+<div class="mw8 center">
+    <section class="flex-ns flex-wrap justify-around mt5">
+        {{ range  .Pages }}
+        <div class="relative w-100  mb4 bg-white">
+            {{ .Render "summary" }}
+        </div>
+        {{ end }}
+    </section>
+</div>
+{{ end }}

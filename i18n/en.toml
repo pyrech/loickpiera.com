@@ -1,5 +1,11 @@
-[taxonomyPageList]
-other = "Find all articles tagged with “{{ .Title }}”:"
+[taxonomyPageListTitle]
+other = "Articles tagged with “{{ .Title }}”"
+
+[taxonomyPageListContent]
+other = "Find below all articles tagged with “{{ .Title }}”."
+
+[taxonomyPageListRss]
+other = "Subscribe via RSS tobe notified of newest articles about “{{ .Title }}”."
 
 [recentTitle]
 other = "Recent articles"
