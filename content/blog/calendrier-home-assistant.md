@@ -5,9 +5,9 @@ date: 2024-05-26T19:00:00+02:00
 draft: false
 disable_share: false
 tags: [ "home-assistant", "domotique" ]
-featured_image: /images/cover-home-assistant.png
+featured_image: /images/cover-home-assistant-1.png
 images:
-    - /images/cover-home-assistant.png
+    - /images/cover-home-assistant-1.png
 ---
 
 J’ai récemment mis mon appartement sur Airbnb pour le louer pendant les

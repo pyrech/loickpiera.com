@@ -5,9 +5,9 @@ date: 2024-05-06T23:00:00+02:00
 draft: false
 disable_share: false
 tags: ["home-assistant", "domotique"]
-featured_image: /images/cover-home-assistant.png
+featured_image: /images/cover-home-assistant-1.png
 images:
-- /images/cover-home-assistant.png
+- /images/cover-home-assistant-1.png
 ---
 
 Depuis plusieurs années, j'utilise [Home Assistant](https://www.home-assistant.io/)
