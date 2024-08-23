@@ -11,7 +11,7 @@ other = "Souscrire via RSS pour être notifié des derniers articles sur “{{ .
 other = "Récents articles"
 
 [allTitle]
-other = "Voir tout les articles"
+other = "Voir tous les articles"
 
 [readMore]
 other = "Lire la suite"
