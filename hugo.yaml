@@ -59,6 +59,8 @@ params:
       url: "https://github.com/pyrech"
     - name: twitter
       url: "https://twitter.com/pyrech"
+    - name: bluesky
+      url: "https://bsky.app/profile/pyrech.bsky.social"
     - name: mastodon
       url: "https://mastodon.social/@pyrech"
       rel: me noopener
