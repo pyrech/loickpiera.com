@@ -32,6 +32,8 @@ Quelques applications que j'ai créée :
 - [Secret Santa](https://github.com/jolicode/secret-santa) une application web pour organiser un secret santa avec votre team Slack ou Discord
 - [3dfollow](https://github.com/pyrech/3dfollow), une application web pour aider à gérer son équipement d'impression 3d (stock de filament, historique d'impressions et coûts, etc.)
 
+J'ai également créé quelques sites, certains très sérieux comme [celui de ma mère qui écrit des romans](https://laurence.piera.fr), d'autres biens plus inutiles comme [celui-là](https://lol.loickpiera.com).
+
 ## Conférences
 
 Quelques conférences que j'ai donné :
