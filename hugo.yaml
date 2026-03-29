@@ -71,6 +71,5 @@ params:
       rel: alternate
       type: "application/rss+xml"
 
-
 Social:
   twitter: pyrech
