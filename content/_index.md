@@ -38,6 +38,7 @@ J'ai également créé quelques sites, certains très sérieux comme [celui de m
 
 Quelques conférences que j'ai donné :
 
+- [🇫🇷 Sous le capot de Castor, le task runner PHP](https://speakerdeck.com/pyrech/sous-le-capot-de-castor-le-task-runner-php)
 - [🇫🇷 Des workers PHP avec Symfony Messenger et systemd](https://speakerdeck.com/pyrech/des-workers-php-avec-symfony-messenger-et-systemd)
 - [🇫🇷 Monitorer les locaux de JoliCode](https://speakerdeck.com/pyrech/monitorer-nos-locaux-avec-de-liot-du-php-et-influxdb)
 - [🇫🇷 Migrer vers Symfony Flex](https://pyrech.github.io/migrer-vers-symfony-flex-conf/index.html?full#coverpage)
