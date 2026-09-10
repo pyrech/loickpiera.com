@@ -5,6 +5,8 @@ date: 2020-03-25T10:42:00+02:00
 draft: false
 disable_share: true
 tags: ["jolicode", "tech"]
+external_url: https://jolicode.com/blog/une-introduction-au-cloud-et-aux-lambdas-en-php
+featured_image: /images/cover-jolicode.png
 ---
 
 > En cette période de confinement, je vous propose de vous évader quelques instants et de partir à la découverte du monde merveilleux du cloud et de démystifier l’utilisation des fonctions en tant que service, notamment grâce aux lambdas d’Amazon.

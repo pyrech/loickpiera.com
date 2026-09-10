@@ -15,3 +15,6 @@ other = "Voir tous les articles"
 
 [readMore]
 other = "Lire la suite"
+
+[themeToggle]
+other = "Changer de thème"

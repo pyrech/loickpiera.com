@@ -49,6 +49,8 @@ params:
   site_logo: ""
   description: ""
   background_color_class: bg-black
+  text_color: dark-gray
+  body_classes: sans-serif bg-near-white
   recent_posts_number: 3
   date_format: ":date_medium"
   custom_css:
@@ -60,6 +62,7 @@ params:
     - name: twitter
       url: "https://twitter.com/pyrech"
     - name: bluesky
+      label: Bluesky
       url: "https://bsky.app/profile/pyrech.bsky.social"
     - name: mastodon
       url: "https://mastodon.social/@pyrech"
