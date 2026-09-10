@@ -1,3 +1,4 @@
+<script>(function(){try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}})();</script>
 {{- if .IsTranslated -}}
 {{ range first 1 .AllTranslations }}
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />

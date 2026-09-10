@@ -1,3 +1,139 @@
+:root {
+    color-scheme: light;
+    --accent: #c2410c;
+    --accent-dark: #9a3412;
+    --accent-tint: rgba(194, 65, 12, .08);
+    --accent-tint-hover: rgba(194, 65, 12, .16);
+    --bg: #f4f4f4;
+    --surface: #fff;
+    --surface-alt: #eee;
+    --text: #333;
+    --heading: #1b1b1b;
+    --muted: #6b6b6b;
+    --border: #e5e5e5;
+    --pre-border: transparent;
+    --icon-sun: none;
+    --icon-moon: inline;
+    --radius: .5rem;
+}
+@mixin dark-palette {
+    color-scheme: dark;
+    --accent: #fb923c;
+    --accent-dark: #fdba74;
+    --accent-tint: rgba(251, 146, 60, .12);
+    --accent-tint-hover: rgba(251, 146, 60, .22);
+    --bg: #121212;
+    --surface: #1c1c1c;
+    --surface-alt: #2a2a2a;
+    --text: #d4d4d4;
+    --heading: #f5f5f5;
+    --muted: #9a9a9a;
+    --border: #2e2e2e;
+    --pre-border: var(--border);
+    --icon-sun: inline;
+    --icon-moon: none;
+}
+/* System preference, unless the user forced light via the toggle */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        @include dark-palette;
+    }
+}
+/* Forced dark via the toggle */
+:root[data-theme="dark"] {
+    @include dark-palette;
+}
+
+/* Social icons + theme toggle: one flex row, vertically centered on every breakpoint */
+.nav-socials {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    margin-top: 1rem;
+
+    /* Neutralise the theme's mobile top padding on each icon link, the row carries the spacing */
+    .ananke-social-link {
+        padding-top: 0;
+    }
+    /* Hidden "opens in new window" icons still take space and push the toggle away */
+    .new-window {
+        display: none;
+    }
+}
+@media screen and (min-width: 60em) {
+    .nav-socials {
+        margin-top: 0;
+    }
+}
+.theme-toggle {
+    background: none;
+    border: 0;
+    padding: .25rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, .8);
+    vertical-align: middle;
+    line-height: 0;
+
+    &:hover {
+        color: #fff;
+    }
+    svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    .icon-sun {
+        display: var(--icon-sun);
+    }
+    .icon-moon {
+        display: var(--icon-moon);
+    }
+}
+
+/* Map theme (tachyons) color classes onto the palette so dark mode follows */
+body,
+.bg-near-white {
+    background-color: var(--bg);
+    color: var(--text);
+}
+.bg-white,
+.bg-light-gray {
+    background-color: var(--surface);
+}
+.dark-gray,
+.mid-gray,
+.near-black,
+.black {
+    color: var(--text);
+}
+.pagination li a {
+    background-color: var(--surface);
+    color: var(--text);
+    border-color: var(--border);
+}
+.pagination li.active a {
+    background-color: var(--surface-alt);
+}
+
+/* Typography: one system font stack everywhere, no serif/avenir mix */
+body,
+.serif,
+.athelas,
+.avenir {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: var(--heading);
+    letter-spacing: -.01em;
+    line-height: 1.2;
+}
+
+/* Language switcher */
 .switch-lang {
     text-align: left;
     z-index: 50;
@@ -19,7 +155,7 @@
         display: none;
         position: absolute;
         min-width: 150px;
-        background-color: rgba(0,0,0, 0.3);
+        background-color: rgba(0, 0, 0, .5);
         border-radius: 5px;
     }
     .switch-lang:hover .lang-dropdown {
@@ -27,101 +163,257 @@
     }
 }
 
-.measure-wide {
-    max-width: 50em;
+/* Hero: stronger dimming toward the text, readable title on busy covers */
+header.cover > div {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .45), rgba(0, 0, 0, .7));
+}
+header.cover h1,
+header.cover h2 {
+    text-shadow: 0 2px 16px rgba(0, 0, 0, .6);
+}
+@media screen and (min-width: 60em) {
+    header.cover .pv6-l {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
-figure > img {
+/* Reading column */
+.prose {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--text);
+}
+.prose h2 {
+    margin-top: 2.5em;
+    font-size: 1.6em;
+}
+.prose h3 {
+    margin-top: 2em;
+    font-size: 1.25em;
+}
+.prose ul,
+.prose ol {
+    text-align: left;
+    padding-left: 1.4em;
+}
+.prose li {
+    margin-bottom: .35em;
+}
+.prose a:not(.ananke-social-link),
+.nested-links a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .18em;
+    text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+    transition: text-decoration-color .15s, color .15s;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-dark);
+        text-decoration-color: currentColor;
+    }
+}
+.prose img {
+    border-radius: var(--radius);
+}
+.prose figure {
+    margin: 2rem 0;
+}
+.prose figure > img {
     display: block;
     margin: 0 auto;
 }
-
-figcaption h4 {
+.prose figcaption h4 {
     text-align: center;
-    font-size: 0.8em;
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+    font-size: .85em;
+    font-weight: 500;
+    color: var(--muted);
+    margin: .6em 0 0;
+}
+.prose blockquote,
+.lh-copy blockquote {
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
+    font-size: 1em;
+    color: var(--text);
+}
+.prose code {
+    font-size: .9em;
+}
+.prose :not(pre) > code {
+    background: var(--surface-alt);
+    border-radius: 4px;
+    padding: .1em .35em;
+}
+pre {
+    border-radius: var(--radius);
+    border: 1px solid var(--pre-border);
+    overflow: auto;
+    margin: 1.5rem 0;
+}
+pre code {
+    line-height: 1.6;
+    padding: 1.25rem 1.5rem;
 }
 
-main a:not(.link):not(.ananke-social-link) {
-    font-weight: bold;
-    text-decoration: none;
-    color: #555;
-
-    &:hover {
-        color: #555;
-    }
-
-    /* Underline styles */
-    display: inline-flex;
-    position: relative;
-    padding: 0;
-
-    /* Fade in */
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0.1em;
-        background-color: #555;
-        opacity: 0;
-        transition: opacity 200ms, transform 200ms;
-    }
-
-    &:hover::after,
-    &:focus::after {
-        opacity: 1;
-        transform: translate3d(0, 0.2em, 0);
-    }
-
-    /* Slide in */
-    overflow: hidden;
-
-    &::after {
-        opacity: 1;
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    &:hover::after,
-    &:focus::after{
-        transform: translate3d(0, 0, 0);
+/* Post page */
+.post-header {
+    max-width: 42rem;
+    margin: 2.5rem auto 1rem;
+}
+.post-title {
+    font-size: 2rem;
+    margin: 0 0 .75rem;
+}
+@media screen and (min-width: 60em) {
+    .post-title {
+        font-size: 2.75rem;
     }
 }
-
-main h2 {
-    color: #1B1B1B;
-    margin-top: 3em;
+.post-cover {
+    max-width: 48rem;
+    margin: 1.5rem auto 2.5rem;
 }
-
-main ul {
-    text-align: left;
+.post-cover img {
+    display: block;
+    width: 100%;
+    border-radius: var(--radius);
 }
-
-.summary-header {
-    display: flex;
-    justify-content: space-between;
+.post-meta {
+    color: var(--muted);
+    font-size: .95rem;
+    margin: 0 0 1rem;
 }
-
 .tags .list {
     margin-right: 10px;
 }
-.summary-tags {
+.tags a,
+.post-card-tags a {
+    color: var(--accent-dark);
+    background: var(--accent-tint);
+    border: 0;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .25em .75em;
+    border-radius: 999px;
+    text-decoration: none;
+
+    &:hover {
+        background: var(--accent-tint-hover);
+    }
+}
+.post-aside {
+    max-width: 42rem;
+    margin: 3rem auto 0;
+}
+.post-aside > div {
+    border-radius: var(--radius);
+}
+#sharing {
+    margin: 0 0 1rem;
+}
+
+/* Post cards */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+    margin: 2rem 0;
+}
+.post-card {
     display: flex;
-    flex-flow: row wrap;
-    gap: 8px;
-    margin-top: 2em;
-}
-.summary-tags .tag {
-    /* override the `margin: auto;` rule which applies to all divs and iframes, defined in main.css */
-    margin: 0;
+    flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform .15s, box-shadow .15s;
 
-    font-size: small;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+    }
+}
+.post-card-img {
+    display: block;
+    aspect-ratio: 2 / 1; /* JoliCode social previews are 1200x600 */
+    overflow: hidden;
+}
+.post-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.post-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.25rem;
+    text-align: left;
+}
+.post-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    font-size: .8rem;
+    color: var(--muted);
+    margin-bottom: .75rem;
+}
+.post-card-meta time {
+    white-space: nowrap;
+}
+.post-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+}
+.post-card-title {
+    font-size: 1.2rem;
+    margin: 0 0 .5rem;
+}
+.post-card-title a {
+    color: var(--heading);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+.post-card-excerpt {
+    color: var(--text);
+    font-size: .95rem;
+    line-height: 1.55;
+    margin: 0 0 1rem;
+    flex: 1;
+}
+.post-card-more {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: .9rem;
+    text-decoration: none;
+    align-self: flex-start;
+
+    &:hover {
+        color: var(--accent-dark);
+        text-decoration: underline;
+    }
 }
 
+/* Tag page RSS link */
 a.taxonomy-rss {
-    color: #ff6f1a;
+    color: var(--accent);
 
     svg {
         fill: currentColor;

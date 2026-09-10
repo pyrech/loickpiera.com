@@ -15,3 +15,6 @@ other = "See all blog posts"
 
 [readMore]
 other = "Read more"
+
+[themeToggle]
+other = "Toggle theme"

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="pa3 pa4-ns mw8 center">
+    {{ with .Content }}
+    <section class="prose pv3">
+        {{ . }}
+    </section>
+    {{ end }}
+    <section class="post-grid">
+        {{ range .Paginator.Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+    </section>
+    {{- template "_internal/pagination.html" . -}}
+</div>
+{{ end }}
