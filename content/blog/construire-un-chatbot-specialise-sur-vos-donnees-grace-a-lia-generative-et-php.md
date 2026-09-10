@@ -5,6 +5,8 @@ date: 2024-10-24T10:42:00+02:00
 draft: false
 disable_share: true
 tags: ["jolicode", "tech"]
+external_url: https://jolicode.com/blog/construire-un-chatbot-specialise-sur-vos-donnees-grace-a-lia-generative-et-php
+featured_image: /images/cover-jolicode.png
 ---
 
 Utilisée pour rédiger n’importe quel type de contenus, pour faire des résumés ou encore intégrée à nos outils de développement, l’IA, et en particulier l’IA générative, a trouvé sa place dans bon nombre de secteurs. Basée sur des LLM entraînés sur des quantités astronomiques de documents divers et variés, ces IA sont capables de comprendre et répondre à la plupart des questions qui leur sont posées. Ce qui ne les empêche cependant pas de donner des réponses erronées ou imprécises dans beaucoup de situations.

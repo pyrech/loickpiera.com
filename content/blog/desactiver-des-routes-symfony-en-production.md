@@ -5,6 +5,8 @@ date: 2024-10-02T14:13:00+02:00
 draft: false
 disable_share: true
 tags: ["jolicode", "tech"]
+external_url: https://jolicode.com/blog/desactiver-des-routes-symfony-en-production
+featured_image: /images/cover-jolicode.png
 ---
 
 Dans certains cas, il peut être nécessaire d’avoir des actions qui ne sont disponibles que lorsqu’on développe en local, mais pas en production. On peut penser au styleguide ou à des pages de debug par exemple. Voyons ensemble comment implémenter cela.

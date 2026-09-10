@@ -5,6 +5,8 @@ date: 2023-05-10T10:42:00+02:00
 draft: false
 disable_share: true
 tags: ["jolicode", "tech"]
+external_url: https://jolicode.com/blog/simplifier-la-generation-de-certificats-ssl-avec-lets-encrypt
+featured_image: /images/cover-jolicode.png
 ---
 
 Nous utilisons Ansible pour provisionner les serveurs et/ou déployer nos applications. Au fil des années, nous avons rassemblé notre expérience avec Ansible au sein d’un outil interne qui se veut utilisable facilement par tout le monde chez nous, y compris les personnes moins à l’aise avec l’OPS.

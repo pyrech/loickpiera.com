@@ -6,6 +6,8 @@ date: 2023-04-12T16:05:00+02:00
 draft: false
 disable_share: true
 tags: ["jolicode", "tech"]
+external_url: https://jolicode.com/blog/symfony-reverse-proxies-and-ip-protection
+featured_image: /images/cover-jolicode.png
 ---
 
 Following an issue encountered on one of my projects, I had to dive into how IP protection works in Symfony applications when at least one reverse proxy is in front of them. After some research, trial and error, I thought it was the perfect opportunity to go back to the basics, then explain how to find the origin of the problem and solve it.
